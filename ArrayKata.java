@@ -7,7 +7,7 @@ public class ArrayKata{
 System.out.print("          Q1 \n\n");
 int[] list = {8, 12, 45, 3, 89, 54, 7, 21};
 
-	 int largest = list[0]; int smallest = list[1]; 
+	 int largest = list[0]; int smallest = list[0]; 
 
 for(int num : list){
 System.out.println(num);
@@ -18,11 +18,11 @@ System.out.println(num);
 	smallest = num;
 }
 }
-System.out.printf("%S%d%n%n", "largest is: ", largest);
+System.out.printf("%S%d%n%n", "largest element is: ", largest);
 
 
 System.out.print("          Q2 \n\n");
-System.out.printf("%S%d%n%n", "smallest is: ", smallest);
+System.out.printf("%S%d%n%n", "smallest element is: ", smallest);
 
 
 System.out.print("          Q3 \n\n");
@@ -45,6 +45,7 @@ int elementToCheck = learn.nextInt();
 	learn.close();
 
 System.out.print("          Q4 \n\n");
+System.out.print("Odd numbers are:");
 	for(int num : list){
 	if(num % 2 != 0){
 	System.out.println(num);
@@ -53,6 +54,7 @@ System.out.print("          Q4 \n\n");
 
 
 System.out.print("          Q5 \n\n");
+System.out.print("Even numbers are:");
 	for(int num : list){
 	if(num % 2 == 0){
 	System.out.println(num);
@@ -108,15 +110,7 @@ do{
 
 
 System.out.print("          Q9 \n\n");
-
-Object[] right = {a, b, c}; Object[] left = {1, 2, 3};
-	right[0] = 'a'; right[1] = 'b'; right[2] = 'c';
-	left[0] = 1; left[1] = 2; left[2] = 3;
-
-Object[] add = new Object(right[]).addAll().toString();
-System.out.print(add);
-
-
+	
 
 
                   }
