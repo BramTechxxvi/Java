@@ -110,10 +110,6 @@ do{
 
 
 System.out.print("          Q9 \n\n");
-int listOfDigits = 2342;
-String arrayDigits = Integer.toString(number);
-for (char figure : arrayDigits) {
-		System.out.println(arrayDigits[figure]);
 
 }
 
