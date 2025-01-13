@@ -6,9 +6,13 @@ import java.util.Scanner;
 		
 int basePay = 5000;
 int amountPerParcel = 0;
-
-	System.out.print("Enter successful delivery: ");
-	int collectionRate = userInput.nextInt();
+int collectionRate;
+	do {
+	System.out.print("\nEnter successful delivery: ");
+	collectionRate = userInput.nextInt();
+		if (collectionRate <= 0) {
+		System.out.print("Invalid Input \nKindly input again");
+		}} while(collectionRate <= 0);
 	
 		if(collectionRate < 50) {
 		amountPerParcel = 160;

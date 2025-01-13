@@ -31,32 +31,34 @@ String[] pizzaType = new String[4];
 		int[] slicesPerBox = {4, 6, 8, 12};
 		int[] pricesPerBox = {2500, 2900, 4000, 5200};
 
+int numberOfGuest; String preferredPizzaType; int numberOfSlices; int pricePerBox; boolean availablePizzaType = false; boolean guest = false; 
+
+			do {
 			System.out.print("Number Of Guest: ");
-			int numberOfGuest = customerInput.nextInt();
+			numberOfGuest = customerInput.nextInt();
 
-				System.out.print("\nEnter pizza Type: ");
-				String preferredPizzaType = customerInput.next();
+				if (numberOfGuest <= 0) {
+					System.out.println("Invalid input \nKindly enter again.");
 
-					boolean availablePizzaType = false;
-					int numberOfSlices = 0; int pricePerBox = 0; 
+					}} while (numberOfGuest <= 0);
 
-						for (int pizzaIndex = 0; pizzaIndex < pizzaType.length; pizzaIndex++)  {
-						if (preferredPizzaType.equalsIgnoreCase(pizzaType[pizzaIndex])) {
+						do {
+						System.out.print("\nEnter pizza Type: ");
+						preferredPizzaType = customerInput.next();
 
-							numberOfSlices = slicesPerBox[pizzaIndex]; pricePerBox = pricesPerBox[pizzaIndex];
-							availablePizzaType = true;
-								break;
+							numberOfSlices = 0; pricePerBox = 0; 
 
-			}
-			
-		 }
+								for (int pizzaIndex = 0; pizzaIndex < pizzaType.length; pizzaIndex++)  {
+								if (preferredPizzaType.equalsIgnoreCase(pizzaType[pizzaIndex])) {
+								numberOfSlices = slicesPerBox[pizzaIndex]; pricePerBox = pricesPerBox[pizzaIndex];
 
+									availablePizzaType = true;
+									break;
+									}}
 										if (!availablePizzaType) {
 										System.out.println("Invalid Order \nKindly input order again.");
-											return;
+										 }}while(!availablePizzaType);
 
-			}
-				
 int boxesNeeded = (numberOfGuest + numberOfSlices - 1) / numberOfSlices;
 int totalSlices = boxesNeeded * numberOfSlices;  
 	int leftOverSlices = totalSlices - numberOfGuest; 
@@ -66,7 +68,7 @@ int totalSlices = boxesNeeded * numberOfSlices;
 			Number of box(es) to buy = %d box(es). 
 			%s size contains %d slices per box.
 			%d box(es) should be sufficient for %d peron(s) as it would contain %d in all.
-			Number of left over slices after serving = %d slices.
+			Number of left over slice(s) after serving = %d slice(s).
 			Price = %d
 			""", boxesNeeded, preferredPizzaType, numberOfSlices, boxesNeeded, numberOfGuest, totalSlices, leftOverSlices, totalPrice);  
 
