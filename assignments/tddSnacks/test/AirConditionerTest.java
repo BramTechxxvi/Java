@@ -11,35 +11,36 @@ public class AirConditionerTest {
         mySwitch = new AirConditioner();
     }
     @Test
-    public void testFunctionSwitchOnAC_switchOnAc() {
+    public void testFunctionSwitchOnAC_turnsOnAc() {
         assertFalse(mySwitch.switchOffAc());
         assertTrue(mySwitch.switchOnAc());
     }
     @Test
-    public void testFunctionSwitchOffAC_switchOffAc() {
+    public void testFunctionSwitchOffAC_turnsOffAc() {
         assertFalse(mySwitch.switchOffAc());
         assertTrue(mySwitch.switchOnAc());
         assertFalse(mySwitch.switchOffAc());
     }
     @Test
-    public void testFunctionIncreaseTemperature() {
-        int initialTemp = 16;
+    public void testFunctionIncreaseTemperature_increasesTemperatureBy1() {
         assertTrue(mySwitch.switchOnAc());
-        assertEquals(initialTemp +1, mySwitch.increaseTemp(), "Increase temperature by  10");
-        assertEquals(17, mySwitch.increaseTemp(), "Increase temperature by  17");
+        assertEquals(17, mySwitch.increaseTemperature(), "Increased temperature by  1");
+        assertEquals(18, mySwitch.increaseTemperature(), "Increased temperature by  1");
+        for (int i = 1; i < 20; i++) {mySwitch.increaseTemperature();}
+        assertNotEquals(38, mySwitch.increaseTemperature());
+        assertEquals(30, mySwitch.getTemperature(), "Temperature does not go above 30 degrees");
     }
     @Test
-    public void testFunctionDecreaseTemperature() {
+    public void testFunctionDecreaseTemperature_decreasesTemperatureBy1() {
         assertTrue(mySwitch.switchOnAc());
-        assertEquals(16, mySwitch.decreaseTemp(), "Decrease temperature by 1");
-        mySwitch.increaseTemp();
-        mySwitch.increaseTemp();
-        assertEquals(18, mySwitch.getTemperature());
-        mySwitch.decreaseTemp();
+        assertEquals(16, mySwitch.decreaseTemperature(), "Decrease temperature by 1");
+        mySwitch.increaseTemperature();
+        mySwitch.increaseTemperature();
+        assertEquals(18, mySwitch.getTemperature(),"Temperature after increasing by 2 degrees");
+        mySwitch.decreaseTemperature();
         assertEquals(17, mySwitch.getTemperature());
         assertNotEquals(16, mySwitch.getTemperature());
-        assertEquals(16, mySwitch.decreaseTemp());
-        mySwitch.decreaseTemp();
-        assertEquals(16, mySwitch.getTemperature());
-    }
-}
+        assertEquals(16, mySwitch.decreaseTemperature());
+        mySwitch.decreaseTemperature();
+        assertEquals(16, mySwitch.getTemperature(),"Temperature does not gpo below 16 degrees");
+    }}

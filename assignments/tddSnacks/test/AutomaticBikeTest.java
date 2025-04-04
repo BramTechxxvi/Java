@@ -4,20 +4,27 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 public class AutomaticBikeTest {
+
     private AutomaticBike myMethod;
     @BeforeEach
-    @Test
     public void setUp() {
         myMethod = new AutomaticBike();
     }
     @Test
     public void testThatAutomaticBikeOff() {
-       myMethod.switchOffBike();
+       assertFalse(myMethod.switchOffBike());
+       assertTrue(myMethod.switchOnBike());
        assertFalse(myMethod.switchOffBike());
     }
     @Test
     public void testThatAutomaticBikeIsOn() {
-        myMethod.switchOnBike();
+        assertFalse(myMethod.switchOffBike());
         assertTrue(myMethod.switchOnBike());
+    }
+    @Test
+    public void testThatAutomaticBikeCanAccelerate() {
+        assertTrue(myMethod.switchOnBike());
+        assertEquals(myMethod.accelerateBike(), 0);
+
     }
 }
