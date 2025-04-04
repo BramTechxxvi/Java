@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Mr Chibuzor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/junit-jupiter-api-5.10.2 (1).jar!/" />
+      <root url="jar://$PROJECT_DIR$/junit-jupiter-api-5.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/junit-platform-console-standalone-1.10.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

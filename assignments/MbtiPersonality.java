@@ -1,5 +1,5 @@
 import java.util.Scanner;
-11:24 PM 1/11/2025ublic class MbtiPersonalityTest {
+public class MbtiPersonality {
 
 	public static void main(String... args) {
 	Scanner userInput = new Scanner(System.in);
@@ -27,8 +27,6 @@ import java.util.Scanner;
 				{" control, govern ", " latitude, freedom "},
 				};
 
-System.out.print(myersBriggs[19][0]);
-
 
 		System.out.print("Enter Your Name: ");
 		String testParticipant = userInput.nextLine();
@@ -40,10 +38,10 @@ for (int row = 0; row < myersBriggs.length; row++) {
 		String options = userInput.next();
 
 if (options.equalsIgnoreCase("a")) { 
-		answerA[0] = 		
+		//answerA[0] =
 
 } else if (options.equalsIgnoreCase("b")) { 
-		answerB[s] =
+		//answerB[s] =
 
 } else {
 	System.out.println("wrong option, kindly enter again");
@@ -54,15 +52,6 @@ if (options.equalsIgnoreCase("a")) {
      }
 
 		
-
-
-
-	                }
-
-
-
-}
-
 
 
 

@@ -9,12 +9,10 @@ public class CheckOutApp {
 	Scanner userInput = new Scanner(System.in);
 String customerName; String itemBought; int itemPieces; double unitPrice; String addMoreItems; String cashierName; double discount;
 
-LocalDateTime dateTime = LocalDateTime.now();
-DateTimeFormatter dateTimeFmt = DateTimeFormatter.ofPattern("dd-mm-yyyy hh:mm:ss");
+LocalDateTime dateTime = LocalDateTime.now(); DateTimeFormatter dateTimeFmt = DateTimeFormatter.ofPattern("dd-mm-yyyy hh:mm:ss");
 String fmtDateTime = dateTime.format(dateTimeFmt);
 
-ArrayList<String> itemBoughts = new ArrayListAS<>();
-ArrayList<Double> unitPrices = new ArrayList<>();
+ArrayList<String> itemBoughts = new ArrayList<>(); ArrayList<Double> unitPrices = new ArrayList<>();
 ArrayList<Integer> quantity = new ArrayList<>();
 		
 	System.out.println("Enter Customer's Name: ");

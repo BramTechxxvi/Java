@@ -71,8 +71,5 @@ int totalSlices = boxesNeeded * numberOfSlices;
 			Number of left over slice(s) after serving = %d slice(s).
 			Price = %d
 			""", boxesNeeded, preferredPizzaType, numberOfSlices, boxesNeeded, numberOfGuest, totalSlices, leftOverSlices, totalPrice);  
-
-	
-	                        }
-							
+	                        }						
 }

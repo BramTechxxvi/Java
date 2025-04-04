@@ -26,11 +26,6 @@ int collectionRate;
 
 int ridersWage = (collectionRate * amountPerParcel) + basePay;
 System.out.println("Rider's Wage = " + ridersWage);
-
-
-
-
+		userInput.close();
 		}
-
-
 }
