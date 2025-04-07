@@ -11,20 +11,46 @@ public class AutomaticBikeTest {
         myMethod = new AutomaticBike();
     }
     @Test
-    public void testThatAutomaticBikeOff() {
-       assertFalse(myMethod.switchOffBike());
+    public void testThatAutomaticBikeOff_switchOffBike() {
        assertTrue(myMethod.switchOnBike());
        assertFalse(myMethod.switchOffBike());
     }
     @Test
-    public void testThatAutomaticBikeIsOn() {
+    public void testThatAutomaticBikeIsOn_switchOnBike() {
         assertFalse(myMethod.switchOffBike());
         assertTrue(myMethod.switchOnBike());
     }
     @Test
-    public void testThatAutomaticBikeCanAccelerate() {
-        assertTrue(myMethod.switchOnBike());
-        assertEquals(myMethod.accelerateBike(), 0);
-
+    public void testThatBikeCannotAccelerateWhenOff() {
+        assertEquals(0, myMethod.accelerateBike());
     }
-}
+    @Test
+    public void testThatAutomaticBikeCanAccelerateInGearOne_accelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(1);
+        assertEquals(1, myMethod.accelerateBike());
+        assertEquals(2, myMethod.accelerateBike());
+    }
+    @Test
+    public void testThatAutomaticBikeCanAccelerateInGearTwo_accelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(2);
+        assertEquals(2, myMethod.accelerateBike());
+        myMethod.accelerateBike();
+        assertEquals(4, myMethod.getSpeed());
+    }
+    @Test
+    public void testThatAutomaticBikeCanAccelerateInGearThree_accelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(3);
+        assertEquals(3, myMethod.accelerateBike());
+        myMethod.accelerateBike();
+        assertEquals(6, myMethod.getSpeed());
+    }
+    @Test
+    public void testThatAutomaticBikeCanAccelerateInGearFour_accelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(4);
+        assertEquals(0, myMethod.accelerateBike());
+        assertEquals(8, myMethod.accelerateBike());
+}}
