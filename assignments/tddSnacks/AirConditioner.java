@@ -4,8 +4,8 @@ public class AirConditioner {
     private int temperature;
 
     public AirConditioner() {
-        this.isOn = false;
-        this.temperature = 16;
+        isOn = false;
+        temperature = 16;
     }
     public boolean switchOnAc() {
         if (!isOn) {

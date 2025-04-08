@@ -8,7 +8,7 @@ public class MyStackTest {
     private MyStack myStack;
     @BeforeEach
     void setUp() {
-        myStack = new MyStack();
+        myStack = new MyStack(6);
     }
 
     @Test

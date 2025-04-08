@@ -1,11 +1,11 @@
 package assignments.mycollection;
 public class MyStack {
-    private int size;
-    private int add;
+    private int [] list;
+    private int top;
 
-    public MyStack() {
-        size = 0;
-        add = -1;
+    public MyStack(int size) {
+        list = new int[size];
+        top = -1;
     }
-    public boolean isEmpty() { return size == 0; }
+    public boolean isEmpty() { return top == -1; }
 }
