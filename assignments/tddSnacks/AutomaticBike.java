@@ -5,8 +5,8 @@ public class AutomaticBike {
     private boolean startBike;
 
     public AutomaticBike() {
-        this.accelerate = 0;
-        this.currentGear = 0;
+        accelerate = 0;
+        currentGear = 0;
     }
     public boolean switchOnBike() {
         startBike = true;
