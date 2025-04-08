@@ -8,10 +8,9 @@ public class AutomaticBike {
         this.accelerate = 0;
         this.currentGear = 0;
     }
-
     public boolean switchOnBike() {
-            startBike = true;
-            return true;
+        startBike = true;
+        return true;
     }
     public boolean switchOffBike() {
         startBike = false;
