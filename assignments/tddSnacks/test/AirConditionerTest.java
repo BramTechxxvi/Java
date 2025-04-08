@@ -16,7 +16,7 @@ public class AirConditionerTest {
     public void testFunctionSwitchOffAC_turnsOffAc() { assertFalse(mySwitch.switchOffAc()); }
 
     @Test
-    public void testThatTemperatureCannotChangeWhenOff() {
+    public void testIfTemperatureCannotChangeWhenOff() {
         mySwitch.switchOffAc();
         assertEquals(0, mySwitch.increaseTemperature());
         assertEquals(0, mySwitch.decreaseTemperature());

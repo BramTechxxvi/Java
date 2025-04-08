@@ -10,28 +10,28 @@ public class AutomaticBikeTest {
     public void setUp() { myMethod = new AutomaticBike();}
 
     @Test
-    public void testThatAutomaticBikeOff_switchOffBike() {
+    public void testIfAutomaticBikeOff_switchOffBike() {
         assertTrue(myMethod.switchOnBike());
         assertFalse(myMethod.switchOffBike());
     }
     @Test
-    public void testThatAutomaticBikeIsOn_switchOnBike() {
+    public void testIfAutomaticBikeIsOn_switchOnBike() {
         assertFalse(myMethod.switchOffBike());
         assertTrue(myMethod.switchOnBike());
     }
     @Test
-    public void testThatBikeCannotAccelerateWhenOff() {
+    public void testIfBikeCannotAccelerateWhenOff() {
         assertEquals(0, myMethod.accelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanAccelerateInGearOne_accelerateBike() {
+    public void testIfAutomaticBikeCanAccelerateInGearOne_accelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(1);
         assertEquals(1, myMethod.accelerateBike());
         assertEquals(2, myMethod.accelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanAccelerateInGearTwo_accelerateBike() {
+    public void testIfAutomaticBikeCanAccelerateInGearTwo_accelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(2);
         assertEquals(2, myMethod.accelerateBike());
@@ -39,7 +39,7 @@ public class AutomaticBikeTest {
         assertEquals(4, myMethod.getSpeed());
     }
     @Test
-    public void testThatAutomaticBikeCanAccelerateInGearThree_accelerateBike() {
+    public void testIfAutomaticBikeCanAccelerateInGearThree_accelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(3);
         assertEquals(3, myMethod.accelerateBike());
@@ -47,14 +47,14 @@ public class AutomaticBikeTest {
         assertEquals(6, myMethod.getSpeed());
     }
     @Test
-    public void testThatAutomaticBikeCanAccelerateInGearFour_accelerateBike() {
+    public void testIfAutomaticBikeCanAccelerateInGearFour_accelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(4);
         assertEquals(4, myMethod.accelerateBike());
         assertEquals(8, myMethod.accelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanDecelerateInGearOne_decelerateBike() {
+    public void testIfAutomaticBikeCanDecelerateInGearOne_decelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(1);
         for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
@@ -62,7 +62,7 @@ public class AutomaticBikeTest {
         assertEquals(3, myMethod.decelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanDecelerateInGearTwo_decelerateBike() {
+    public void testIfAutomaticBikeCanDecelerateInGearTwo_decelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(2);
         for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
@@ -70,7 +70,7 @@ public class AutomaticBikeTest {
         assertEquals(6, myMethod.decelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanDecelerateInGearThree_decelerateBike() {
+    public void testIfAutomaticBikeCanDecelerateInGearThree_decelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(3);
         for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
@@ -78,7 +78,7 @@ public class AutomaticBikeTest {
         assertEquals(9, myMethod.decelerateBike());
     }
     @Test
-    public void testThatAutomaticBikeCanDecelerateInGearFour_decelerateBike() {
+    public void testIfAutomaticBikeCanDecelerateInGearFour_decelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(4);
         for (int count = 0; count < 11; count++) { myMethod.accelerateBike(); }

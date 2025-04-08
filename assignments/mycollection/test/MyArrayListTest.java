@@ -11,6 +11,6 @@ public class MyArrayListTest {
         myList = new MyArrayList();
     }
     @Test
-    public void testThatArrayListIsEmpty() { assertTrue(myList.isEmpty());}
+    public void testIfArrayListIsEmpty() { assertTrue(myList.isEmpty());}
 
 }

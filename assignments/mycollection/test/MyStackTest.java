@@ -12,26 +12,36 @@ public class MyStackTest {
     }
 
     @Test
-    public void testThatStackIsEmpty_isEmpty() {
+    public void testIfStackIsEmpty_isEmpty() {
         assertTrue(myStack.isEmpty(), "Stack is empty");
     }
     @Test
-    public void testThatStackCanAddElement_push() {
+    public void testIfStackCanAddElement_push() {
         myStack.push(10);
         myStack.push(7);
         assertFalse(myStack.isEmpty());
     }
     @Test
-    public void testThatsTACKcAnPickItesm_peek() {
+    public void testIfStackCanPickItems_peek() {
         myStack.push(10);
         myStack.push(7);
         myStack.push(-17);
-        myStack.peek(10);
-    }
-    @Test
-    public void testViewElements_viewStack() {
-        myStack.push(10);
-        myStack.push(7);
+        assertEquals(-17, myStack.peek());
         myStack.viewStack();
     }
-}
+   @Test
+    public void testIfStackCanRemoveElement_pop() {
+        myStack.push(10);
+        myStack.push(7);
+        myStack.push(-17);
+        assertEquals(-17, myStack.pop());
+        myStack.viewStack();
+   }
+   @Test
+    public void testIfStackIsFull() {
+        myStack = new MyStack(2);
+        myStack.push(10);
+        myStack.push(-17);
+        assertTrue(myStack.isFull());
+   }}
+
