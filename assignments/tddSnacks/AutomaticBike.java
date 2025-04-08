@@ -14,6 +14,7 @@ public class AutomaticBike {
     }
     public boolean switchOffBike() {
         startBike = false;
+        accelerate = 0;
         return false;
     }
     public void setGear(int gear) {
@@ -32,12 +33,9 @@ public class AutomaticBike {
                     if (accelerate <= 40) accelerate+=3;
                     break;
                 case 4:
-                    if (accelerate >= 41) accelerate+=4;
+                    accelerate+=4;
                     break;
-                default :
-                    break;
-            }}
-        return accelerate;
+            }} return accelerate;
     }
     public int decelerateBike() {
         if (startBike) {
@@ -52,11 +50,8 @@ public class AutomaticBike {
                     if (accelerate <= 40) accelerate-=3;
                     break;
                 case 4:
-                    if (accelerate >= 41) accelerate-=4;
+                    accelerate-=4;
                     break;
-                default :
-                    break;
-            }}
-        return accelerate;
+            }} return accelerate;
     }
     public int getSpeed() {return accelerate;}}

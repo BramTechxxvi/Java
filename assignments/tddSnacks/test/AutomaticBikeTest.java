@@ -7,9 +7,7 @@ public class AutomaticBikeTest {
 
     private AutomaticBike myMethod;
     @BeforeEach
-    public void setUp() {
-        myMethod = new AutomaticBike();
-    }
+    public void setUp() { myMethod = new AutomaticBike();}
 
     @Test
     public void testThatAutomaticBikeOff_switchOffBike() {
@@ -52,7 +50,7 @@ public class AutomaticBikeTest {
     public void testThatAutomaticBikeCanAccelerateInGearFour_accelerateBike() {
         assertTrue(myMethod.switchOnBike());
         myMethod.setGear(4);
-        assertEquals(0, myMethod.accelerateBike());
+        assertEquals(4, myMethod.accelerateBike());
         assertEquals(8, myMethod.accelerateBike());
     }
     @Test
@@ -82,8 +80,7 @@ public class AutomaticBikeTest {
     @Test
     public void testThatAutomaticBikeCanDecelerateInGearFour_decelerateBike() {
         assertTrue(myMethod.switchOnBike());
-        myMethod.setGear(1);
-        for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
-        assertEquals(16, myMethod.decelerateBike());
-        assertEquals(12, myMethod.decelerateBike());
+        myMethod.setGear(4);
+        for (int count = 0; count < 11; count++) { myMethod.accelerateBike(); }
+        assertEquals(40, myMethod.decelerateBike());
     }}

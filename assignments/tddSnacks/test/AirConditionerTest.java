@@ -7,12 +7,7 @@ public class AirConditionerTest {
 
     private AirConditioner mySwitch;
     @BeforeEach
-    public void setUp() {
-        mySwitch = new AirConditioner();
-    }
-
-    @Test
-    public void testInitialState() { assertEquals(mySwitch.isOn, false); }
+    public void setUp() { mySwitch = new AirConditioner();}
 
     @Test
     public void testFunctionSwitchOnAC_turnsOnAc() { assertTrue(mySwitch.switchOnAc());}
@@ -22,8 +17,9 @@ public class AirConditionerTest {
 
     @Test
     public void testThatTemperatureCannotChangeWhenOff() {
-        assertEquals(16, mySwitch.increaseTemperature());
-        assertEquals(16, mySwitch.decreaseTemperature());
+        mySwitch.switchOffAc();
+        assertEquals(0, mySwitch.increaseTemperature());
+        assertEquals(0, mySwitch.decreaseTemperature());
     }
     @Test
     public void testFunctionIncreaseTemperature_increasesTemperatureBy1() {

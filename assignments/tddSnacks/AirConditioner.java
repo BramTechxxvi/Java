@@ -15,6 +15,7 @@ public class AirConditioner {
     }
     public boolean switchOffAc() {
             isOn = false;
+            temperature = 0;
             return false;
     }
     public int increaseTemperature() {
