@@ -6,14 +6,16 @@ import org.junit.jupiter.api.Test;
 public class AutomaticBikeTest {
 
     private AutomaticBike myMethod;
+
     @BeforeEach
     public void setUp() {
         myMethod = new AutomaticBike();
     }
+
     @Test
     public void testThatAutomaticBikeOff_switchOffBike() {
-       assertTrue(myMethod.switchOnBike());
-       assertFalse(myMethod.switchOffBike());
+        assertTrue(myMethod.switchOnBike());
+        assertFalse(myMethod.switchOffBike());
     }
     @Test
     public void testThatAutomaticBikeIsOn_switchOnBike() {
@@ -53,4 +55,36 @@ public class AutomaticBikeTest {
         myMethod.setGear(4);
         assertEquals(0, myMethod.accelerateBike());
         assertEquals(8, myMethod.accelerateBike());
-}}
+    }
+    @Test
+    public void testThatAutomaticBikeCanDecelerateInGearOne_decelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(1);
+        for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
+        assertEquals(4, myMethod.decelerateBike());
+        assertEquals(3, myMethod.decelerateBike());
+    }
+    @Test
+    public void testThatAutomaticBikeCanDecelerateInGearTwo_decelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(2);
+        for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
+        assertEquals(8, myMethod.decelerateBike());
+        assertEquals(6, myMethod.decelerateBike());
+    }
+    @Test
+    public void testThatAutomaticBikeCanDecelerateInGearThree_decelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(3);
+        for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
+        assertEquals(12, myMethod.decelerateBike());
+        assertEquals(9, myMethod.decelerateBike());
+    }
+    @Test
+    public void testThatAutomaticBikeCanDecelerateInGearFour_decelerateBike() {
+        assertTrue(myMethod.switchOnBike());
+        myMethod.setGear(1);
+        for (int count = 0; count < 5; count++) { myMethod.accelerateBike(); }
+        assertEquals(16, myMethod.decelerateBike());
+        assertEquals(12, myMethod.decelerateBike());
+    }}
