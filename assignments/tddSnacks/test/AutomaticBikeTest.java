@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 public class AutomaticBikeTest {
 
     private AutomaticBike myMethod;
-
     @BeforeEach
     public void setUp() {
         myMethod = new AutomaticBike();

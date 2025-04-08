@@ -18,14 +18,16 @@ public class AirConditioner {
             return false;
     }
     public int increaseTemperature() {
-        if (isOn) temperature++;
-        if (temperature >= 30) temperature = 30;
-        return temperature;
+        if (isOn) {
+            temperature++;
+            if (temperature >= 30) temperature = 30;
+        } return temperature;
     }
     public int decreaseTemperature() {
-        if (isOn) temperature--;
-        if (temperature <= 16) temperature = 16;
-        return temperature;
+        if (isOn) {
+            temperature--;
+            if (temperature <= 16) temperature = 16;
+        } return temperature;
     }
     public int getTemperature() {return temperature;}
 }
