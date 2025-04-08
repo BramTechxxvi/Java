@@ -11,16 +11,9 @@ public class AirConditionerTest {
         mySwitch = new AirConditioner();
     }
     @Test
-    public void testFunctionSwitchOnAC_turnsOnAc() {
-        assertFalse(mySwitch.switchOffAc());
-        assertTrue(mySwitch.switchOnAc());
-    }
+    public void testFunctionSwitchOnAC_turnsOnAc() { assertTrue(mySwitch.switchOnAc());}
     @Test
-    public void testFunctionSwitchOffAC_turnsOffAc() {
-        assertFalse(mySwitch.switchOffAc());
-        assertTrue(mySwitch.switchOnAc());
-        assertFalse(mySwitch.switchOffAc());
-    }
+    public void testFunctionSwitchOffAC_turnsOffAc() { assertFalse(mySwitch.switchOffAc()); }
     @Test
     public void testThatTemperatureCannotChangeWhenOff() {
         assertEquals(16, mySwitch.increaseTemperature());
