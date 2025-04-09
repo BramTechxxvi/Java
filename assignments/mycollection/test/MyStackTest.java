@@ -19,6 +19,7 @@ public class MyStackTest {
     public void testIfStackCanAddElement_push() {
         myStack.push(10);
         myStack.push(7);
+        myStack.push(9);
         assertFalse(myStack.isEmpty());
     }
     @Test
@@ -44,4 +45,3 @@ public class MyStackTest {
         myStack.push(-17);
         assertTrue(myStack.isFull());
    }}
-
