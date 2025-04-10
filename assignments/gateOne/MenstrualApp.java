@@ -9,11 +9,9 @@ public class MenstrualApp {
     private String name;
     private int periodLength;
     private int cycleLength;
-    private int startDay;
 
     public MenstrualApp() {
         this.name = name;
-        this.startDay = startDay;
         this.periodLength = 6;
     }
     public String getUserDetails(String name) {
@@ -30,18 +28,30 @@ public class MenstrualApp {
     public void getSafePeriod() {
 
     }
-    public void getPeriodLength() {
+    public void getPeriodLength(int startDay, int month) {
         Calendar myCalendar = Calendar.getInstance();
-        myCalendar.add(Calendar.DAY_OF_MONTH, +this.periodLength);
-        System.out.println(myCalendar.get(Calendar.DATE));
+        myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
+        myCalendar.set(Calendar.MONTH, month);
+        int startDate = myCalendar.get(Calendar.DATE);
+        myCalendar.add(Calendar.DAY_OF_MONTH, periodLength);
+        int endDate = myCalendar.get(Calendar.DATE);
+        System.out.println(startDate + " - " + endDate);
     }
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         MenstrualApp myPeriod = new MenstrualApp();
         System.out.println("====== Menstrual Flow Tracker Application ======");
-        System.out.print("Enter start day: ");
-        String startDay = userInput.nextLine();
-        myPeriod.getPeriodLength();
+        int startDay;
+        int month;
+        do {
+            System.out.print("Enter start day: ");
+            startDay = userInput.nextInt();
+        }while(startDay <1 || startDay > 31);
+        do {
+            System.out.print("Enter month: ");
+            month = userInput.nextInt();
+        }while(month <1 || month > 12);
+        myPeriod.getPeriodLength(startDay, month);
 
     }
 }
