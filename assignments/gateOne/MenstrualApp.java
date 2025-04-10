@@ -8,7 +8,7 @@ public class MenstrualApp {
 
     private String name;
     private final int periodLength;
-    private int cycleLength;
+    private final int cycleLength;
     private final Calendar myCalendar = Calendar.getInstance();
     private final SimpleDateFormat date = new SimpleDateFormat("dd MMM yyyy");
 
@@ -40,6 +40,15 @@ public class MenstrualApp {
         Date endDate = myCalendar.getTime();
         return "Your safe period is between " +date.format(startDate)+" and " + date.format(endDate);
     }
+    public String getSecondSafePeriod(int startDay, int month) {
+        myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
+        myCalendar.set(Calendar.MONTH, month - 1);
+        myCalendar.add(Calendar.DAY_OF_MONTH, + periodLength);
+        Date startDate = myCalendar.getTime();
+        myCalendar.add(Calendar.DAY_OF_MONTH, + 4);
+        Date endDate = myCalendar.getTime();
+        return "Your second safe period is between " +date.format(startDate)+" and " + date.format(endDate);
+    }
     public String getFerTileWindow(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
         myCalendar.set(Calendar.MONTH, month - 1);
@@ -47,7 +56,7 @@ public class MenstrualApp {
         Date startDate = myCalendar.getTime();
         myCalendar.add(Calendar.DAY_OF_MONTH, + 6);
         Date endDate = myCalendar.getTime();
-        return "Your fertile window period is between " +date.format(startDate) + " and " + date.format(endDate) +"&";
+        return "Your fertile window period is between " +date.format(startDate) + " and " + date.format(endDate);
     }
     public String getOvulationPeriod(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
@@ -57,8 +66,8 @@ public class MenstrualApp {
         return "Your ovulation day is "+date.format(ovulationDay);
     }
     public String getNextCycleDate(int startDay, int month) {
-        myCalendar.add(Calendar.DAY_OF_MONTH, startDay);
-        myCalendar.add(Calendar.MONTH, month - 1);
+        myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
+        myCalendar.set(Calendar.MONTH, month - 1);
         myCalendar.add(Calendar.DAY_OF_MONTH, +cycleLength);
         Date cycleDate = myCalendar.getTime();
         return "Your next cycle day is "+date.format(cycleDate);
@@ -77,10 +86,7 @@ public class MenstrualApp {
             System.out.print("Enter month: ");
             month = userInput.nextInt();
         }while(month <1 || month > 12);
-        System.out.println(myPeriod.getFlowPeriod(startDay, month));
-        System.out.println(myPeriod.getSafePeriod(startDay, month));
-        System.out.println(myPeriod.getFerTileWindow(startDay, month));
-        System.out.println(myPeriod.getOvulationPeriod(startDay, month));
-        System.out.println(myPeriod.getNextCycleDate(startDay, month));
-
+        System.out.printf("""
+        %s%n%s%n%s%n%s%n%s%n%s
+        """,  myPeriod.getFlowPeriod(startDay, month), myPeriod.getSafePeriod(startDay, month), myPeriod.getSecondSafePeriod(startDay, month), myPeriod.getFerTileWindow(startDay, month),myPeriod.getOvulationPeriod(startDay, month),  myPeriod.getNextCycleDate(startDay, month));
     }}
