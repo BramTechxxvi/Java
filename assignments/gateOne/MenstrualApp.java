@@ -6,22 +6,14 @@ import java.util.Scanner;
 
 public class MenstrualApp {
 
-    private String name;
     private final int periodLength;
     private final int cycleLength;
     private final Calendar myCalendar = Calendar.getInstance();
     private final SimpleDateFormat date = new SimpleDateFormat("dd MMM yyyy");
 
     public MenstrualApp() {
-        this.name = name;
         this.periodLength = 5;
         this.cycleLength = 28;
-    }
-    public String getUserDetails(String name) {
-        if (!name.matches("^[A-Za-z]+$")) {
-            System.out.println("Invalid name!");
-        } this.name = name;
-        return this.name;
     }
     public String getFlowPeriod(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
@@ -43,16 +35,16 @@ public class MenstrualApp {
     public String getSecondSafePeriod(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
         myCalendar.set(Calendar.MONTH, month - 1);
-        myCalendar.add(Calendar.DAY_OF_MONTH, + periodLength);
+        myCalendar.add(Calendar.DAY_OF_MONTH, + 16);
         Date startDate = myCalendar.getTime();
-        myCalendar.add(Calendar.DAY_OF_MONTH, + 4);
+        myCalendar.add(Calendar.DAY_OF_MONTH, + 10);
         Date endDate = myCalendar.getTime();
         return "Your second safe period is between " +date.format(startDate)+" and " + date.format(endDate);
     }
     public String getFerTileWindow(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
         myCalendar.set(Calendar.MONTH, month - 1);
-        myCalendar.add(Calendar.DAY_OF_MONTH, +9);
+        myCalendar.add(Calendar.DAY_OF_MONTH, +8);
         Date startDate = myCalendar.getTime();
         myCalendar.add(Calendar.DAY_OF_MONTH, + 6);
         Date endDate = myCalendar.getTime();
@@ -61,7 +53,7 @@ public class MenstrualApp {
     public String getOvulationPeriod(int startDay, int month) {
         myCalendar.set(Calendar.DAY_OF_MONTH, startDay);
         myCalendar.set(Calendar.MONTH, month - 1);
-        myCalendar.add(Calendar.DAY_OF_MONTH, + 14);
+        myCalendar.add(Calendar.DAY_OF_MONTH, + 13);
         Date ovulationDay = myCalendar.getTime();
         return "Your ovulation day is "+date.format(ovulationDay);
     }
@@ -78,6 +70,11 @@ public class MenstrualApp {
         System.out.println("====== Menstrual Flow Tracker Application ======");
         int startDay;
         int month;
+        String userName;
+        do {
+            System.out.print("Enter name: ");
+            userName = userInput.next();
+        }while(!userName.matches("^[A-Za-z]+$"));
         do {
             System.out.print("Enter start day: ");
             startDay = userInput.nextInt();
