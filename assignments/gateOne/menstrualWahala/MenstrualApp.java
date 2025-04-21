@@ -63,7 +63,7 @@ public class MenstrualApp {
         Date cycleDate = myCalendar.getTime();
         return "Your next cycle day is "+date.format(cycleDate);
     }
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Scanner userInput = new Scanner(System.in);
         MenstrualApp myPeriod = new MenstrualApp();
         System.out.println("====== Menstrual Flow Tracker Application ======");
@@ -104,4 +104,5 @@ public class MenstrualApp {
             Hey %S
         %s%n%s%n%s%n%s%n%s%n%s
         """, userName, myPeriod.getFlowPeriod(startDay, month), myPeriod.getSafePeriod(startDay, month), myPeriod.getSecondSafePeriod(startDay, month), myPeriod.getFerTileWindow(startDay, month),myPeriod.getOvulationPeriod(startDay, month),  myPeriod.getNextCycleDate(startDay, month));
-    }}
+    }
+}
