@@ -1,5 +1,4 @@
-package assignments.gateOne.test;
-import assignments.gateOne.MenstrualApp;
+package assignments.gateOne.menstrualWahala;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

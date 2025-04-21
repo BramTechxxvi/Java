@@ -1,9 +1,8 @@
-package assignments.gateOne;
+package assignments.gateOne.menstrualWahala;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
-
 public class MenstrualApp {
 
     private final int periodLength;
@@ -71,19 +70,38 @@ public class MenstrualApp {
         int startDay;
         int month;
         String userName;
-        do {
+        while (true) {
             System.out.print("Enter name: ");
-            userName = userInput.next();
-        }while(!userName.matches("^[A-Za-z]+$"));
-        do {
-            System.out.print("Enter start day: ");
+            try {
+                userName = userInput.nextLine();
+            if (userName.isEmpty() || !userName.matches("^[A-Za-z]+$")) {
+                System.out.println("Invalid user name"); continue;
+            } break;
+        }catch (Exception e) {
+        System.out.println("Invalid user name"); userInput.nextLine();}
+        }
+        while (true) {
+        System.out.print("Enter start day: ");
+        try {
             startDay = userInput.nextInt();
-        }while(startDay <1 || startDay > 31);
-        do {
-            System.out.print("Enter month: ");
+            if (startDay < 1 || startDay > 31) {
+            System.out.print("Invalid day of month \n"); continue;
+            } break;
+        } catch (Exception e) {
+        System.out.println("Invalid day of month"); userInput.nextLine();
+        }}
+        while (true) {
+        System.out.print("Enter month: ");
+        try {
             month = userInput.nextInt();
-        }while(month <1 || month > 12);
+            if (month < 1 || month > 12) {
+            System.out.print("Invalid month \n"); continue;
+            } break;
+        } catch (Exception e) {
+        System.out.println("Invalid month"); userInput.nextLine();
+        }}
         System.out.printf("""
+            Hey %S
         %s%n%s%n%s%n%s%n%s%n%s
-        """,  myPeriod.getFlowPeriod(startDay, month), myPeriod.getSafePeriod(startDay, month), myPeriod.getSecondSafePeriod(startDay, month), myPeriod.getFerTileWindow(startDay, month),myPeriod.getOvulationPeriod(startDay, month),  myPeriod.getNextCycleDate(startDay, month));
+        """, userName, myPeriod.getFlowPeriod(startDay, month), myPeriod.getSafePeriod(startDay, month), myPeriod.getSecondSafePeriod(startDay, month), myPeriod.getFerTileWindow(startDay, month),myPeriod.getOvulationPeriod(startDay, month),  myPeriod.getNextCycleDate(startDay, month));
     }}
