@@ -1,10 +1,8 @@
 package assignments.diary;
-
 import java.time.LocalDateTime;
-
 public class Entry {
 
-    private int id;
+    private final int id;
     private String title;
     private String body;
     private final LocalDateTime dateCreated;
@@ -16,29 +14,22 @@ public class Entry {
         this.dateCreated = LocalDateTime.now();
     }
 
-    public int generateId() {
-        return id++;
-    }
-
     public int getId() {
         return id;
     }
 
-    public String getTitle() {
-        return title;
+    public void setTitle() {
+        this.title = title;
     }
 
     public LocalDateTime getDateCreated() {
         return dateCreated;
     }
 
-    public String getBody() { return body; }
+    public void setBody() { this.body = body; }
 
-    public static void main(String...  args) {
-        Entry test = new Entry(1, "Test", "Test");
-        System.out.print(test.getDateCreated());
-        System.out.println(test.getId());
-        System.out.println(test.getTitle());
+    public String toString() {
+        return "Entry ID: " + id + "\nTitle: " + title + "\nBody: " + body;
     }
 
 }

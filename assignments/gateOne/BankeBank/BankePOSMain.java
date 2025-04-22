@@ -40,6 +40,7 @@ public class BankePOSMain {
         public static String getMenu() {
             return "\n1. Create Account \n2. Bank Services \n3. Exit";
         }
+
         public static String input(String prompt) {
         Scanner userInput = new Scanner(System.in);
         System.out.print(prompt);
