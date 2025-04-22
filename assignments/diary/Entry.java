@@ -18,15 +18,19 @@ public class Entry {
         return id;
     }
 
-    public void setTitle() {
+    public void setTitle(String title) {
         this.title = title;
     }
+
+    public String getTitle() {return title;}
 
     public LocalDateTime getDateCreated() {
         return dateCreated;
     }
 
-    public void setBody() { this.body = body; }
+    public void setBody(String body) { this.body = body; }
+
+    public String getBody() {return body;}
 
     public String toString() {
         return "Entry ID: " + id + "\nTitle: " + title + "\nBody: " + body;

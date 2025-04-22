@@ -9,6 +9,7 @@ public class MenstrualAppTest {
     public void setUp() {
         myTracker = new MenstrualApp();
     }
+
     @Test
     public void testIfPeriodLengthIsValid_getPeriodLength() {
         String start = "04 Mar 2025";
@@ -17,6 +18,7 @@ public class MenstrualAppTest {
         String expected = "Your flow period is between " +start+" and " +end;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testEndOfYear_getPeriodLength() {
         String start = "28 Dec 2025";
@@ -25,6 +27,7 @@ public class MenstrualAppTest {
         String expected = "Your flow period is between " +start+" and " +end;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIfSafePeriodLengthIsValid_getSafePeriodLength() {
         String start = "09 Mar 2025";
@@ -33,6 +36,7 @@ public class MenstrualAppTest {
         String expected = "Your safe period is between " +start+" and " +end;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIfSecondSafePeriodIsValid_getSecondSafePeriod() {
         String start = "20 Mar 2025";
@@ -41,6 +45,7 @@ public class MenstrualAppTest {
         String expected = "Your second safe period is between " +start+" and " +end;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIfFertileWindowIsValid_getFertileWindow() {
         String start = "12 Mar 2025";
@@ -49,6 +54,7 @@ public class MenstrualAppTest {
         String expected = "Your fertile window period is between " +start+" and " +end;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIfOvulationPeriodIsValid_getOvulationPeriod() {
         String ovulationDay = "17 Mar 2025";
@@ -56,6 +62,7 @@ public class MenstrualAppTest {
         String expected = "Your ovulation day is " +ovulationDay;
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIfNextCycleDateIsValid_getNextCycleDate() {
         String cycleDay = "01 Apr 2025";
