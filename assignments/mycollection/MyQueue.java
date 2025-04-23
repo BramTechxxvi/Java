@@ -9,24 +9,34 @@ public class MyQueue {
         first = -1;
         last = -1;
     }
-    public boolean isEmpty() { return last == -1;}
 
-    public void enqueue (int value) {
-        if (last == list.length - 1) {
-            System.out.println("Queue is full");
-        } else {
-            list[++last] = value;
-        }
+    public boolean isEmpty() {
+        return first == -1;
+    }
+
+    public void enqueue(int value) {
+        if (last == list.length - 1) throw new IllegalArgumentException("Queue is full");
+        else list[++last] = value;
         if (first == -1) first++;
     }
-    public boolean isFull() { return last == list.length-1;}
-    public int dequeue() {
-        int x = -1;
-        if (isEmpty()) {
-            System.out.println("Queue is empty");
-        }else {
-            x = list[first++];
-        } return x;
+
+    public boolean isFull() {
+        return last == list.length - 1;
     }
-    public int peek() { return list[first++];}
+
+    public int dequeue() {
+        int index;
+        if (isEmpty()) throw new IllegalArgumentException("Queue is empty");
+        else index = list[first++];
+        return index;
+    }
+
+    public void viewQueue() {
+        for (int count = first; count <= last; count++) System.out.print(list[count] + " ");
+    }
+
+    public int peek() {
+        if (isEmpty()) throw new IllegalArgumentException("Queue is empty");
+        else return list[first];
+    }
 }
