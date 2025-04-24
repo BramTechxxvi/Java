@@ -11,6 +11,16 @@ public class MyArrayListTest {
         myList = new MyArrayList();
     }
     @Test
-    public void testIfArrayListIsEmpty() { assertTrue(myList.isEmpty());}
+    public void testIfArrayListIsEmpty() { assertTrue(myList.isEmpty()); }
+
+    @Test
+    public void test_If_ArrayList_Can_Add__add() {
+    myList.add(7);
+    myList.add(8);
+    assertFalse(myList.isEmpty());
+    }
+
+    @Test
+    MyArrayList myList = new A();
 
 }
