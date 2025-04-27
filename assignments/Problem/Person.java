@@ -14,4 +14,8 @@ public class Person {
     public int getSize() { return problems.size(); }
 
     public void addProblem(Problem problem) { problems.add(problem); }
+
+    public void solveProblem(Problem prob) {
+        for (Problem problem : problems) if (problem.equals(prob)) problem.solve();
+    }
 }

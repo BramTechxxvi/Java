@@ -21,8 +21,29 @@ class PersonTest {
         Problem problem = new Problem("Wierd dreams", ProblemType.SPIRITUAL);
         newPerson.addProblem(problem);
         assertEquals(1, newPerson.getSize());
+    }
 
-         }
+    @Test
+    public void test_If_Person_Can_Add_Multiple_Problems__addProblem() {
+        Problem problem1 = new Problem("Wierd dreams", ProblemType.SPIRITUAL);
+        Problem problem2 = new Problem("I can't write", ProblemType.EDUCATIONAL);
+        newPerson.addProblem(problem1);
+        newPerson.addProblem(problem2);
+        assertEquals(2, newPerson.getSize());
+    }
+
+    @Test
+    public void test_If_Person_Can_Solve_Problem__solve() {
+        Problem problem1 = new Problem("Wierd dreams", ProblemType.SPIRITUAL);
+        Problem problem2 = new Problem("I can't write", ProblemType.EDUCATIONAL);
+        newPerson.addProblem(problem1);
+        newPerson.addProblem(problem2);
+        newPerson.solveProblem(p);
+        assertTrue(problem1.isSolved());
+    }
+
+    @Test
+    public void test_If_Person_Can_Solve_Multiple_Problems__solve() {}
 
 
 
