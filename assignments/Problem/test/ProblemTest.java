@@ -34,8 +34,9 @@ public class ProblemTest {
 
     @Test
     public void test_If_Problem_Can_Get_Description__getDescription() {
-        assertEquals("FIN001", myProblem.getId());
+        assertEquals("FIN1", myProblem.getId());
         Problem newProblem = new Problem("Debt", "Credit card", ProblemType.FINANCIAL);
+        assertEquals("FIN2", newProblem.getId());
     }
 
     @Test
