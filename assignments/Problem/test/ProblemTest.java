@@ -24,14 +24,11 @@ public class ProblemTest {
 
     @Test
     public void test_If_Problem_Can_Get_Type__getType() {
-        assertEquals(myProblem.getType(), ProblemType.FINANCIAL);
+        assertEquals(ProblemType.FINANCIAL, myProblem.getType());
     }
 
     @Test
     public void test_If_Problem_Can_Get_Name__getName() {
         assertEquals("Debt", myProblem.getName());
     }
-
-
-
 }
