@@ -45,7 +45,4 @@ class PersonTest {
     @Test
     public void test_If_Person_Can_Solve_Multiple_Problems__solve() {}
 
-
-
-
 }

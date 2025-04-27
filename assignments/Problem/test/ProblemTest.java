@@ -34,16 +34,41 @@ public class ProblemTest {
 
     @Test
     public void test_If_Problem_Can_Get_Description__getDescription() {
-        assertEquals("FIN1", myProblem.getId());
         Problem newProblem = new Problem("Debt", "Credit card", ProblemType.FINANCIAL);
-        assertEquals("FIN2", newProblem.getId());
+        assertEquals("Credit card", newProblem.getDescription());
+    }
+
+    @Test
+    public void test_If_Problem_Can_Create_With_Invalid_name__ThrowsException() {
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> {
+            new Problem("", "Credit card", ProblemType.FINANCIAL);
+        });
+        assertEquals("Field cannot be empty", exception.getMessage());
+        Exception exception2 = assertThrows(IllegalArgumentException.class, ()-> {
+            new Problem(" ", "Credit card", ProblemType.FINANCIAL);
+        });
+        assertEquals("Field cannot be empty", exception2.getMessage());
+    }
+
+    @Test
+    public void test_If_Problem_Can_Create_With_Invalid_Description__ThrowsException() {
+        Problem newProblem;
+        Exception exception = assertThrows(IllegalArgumentException.class, ()-> {
+            new Problem("Debt", "", ProblemType.FINANCIAL);
+        });
+        assertEquals("Field cannot be empty", exception.getMessage());
+        Exception exception2 = assertThrows(IllegalArgumentException.class, ()-> {
+            new Problem("Debt", " ", ProblemType.FINANCIAL);
+        });
+        assertEquals("Field cannot be empty", exception2.getMessage());
     }
 
     @Test
     public void test_If_Problem_Has_All_Fields__toString() {
         Problem newProblem = new Problem("Laptop", "Broken screen", ProblemType.TECHNICAL);
         String string = newProblem.toString();
-        assertTrue(string.contains("Broken Laptop"));
+        assertTrue(string.contains("Laptop"));
+        assertTrue(string.contains("Broken screen"));
         assertTrue(string.contains("TECHNICAL"));
     }
 }
