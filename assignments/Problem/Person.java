@@ -3,14 +3,15 @@ import java.util.ArrayList;
 public class Person {
 
     private String name;
-    private ArrayList<Problem> myProblems;
+    private ArrayList<Problem> problems;
 
     public Person(String name) {
         this.name = name;
-        this.myProblems = new ArrayList<>();
+        this.problems = new ArrayList<>();
     }
     public String getName() { return name; }
 
-    public int getSize() { return myProblems.size(); }
+    public int getSize() { return problems.size(); }
 
+    public void addProblem(Problem problem) { problems.add(problem); }
 }

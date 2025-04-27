@@ -31,4 +31,12 @@ public class ProblemTest {
     public void test_If_Problem_Can_Get_Name__getName() {
         assertEquals("Debt", myProblem.getName());
     }
+
+    @Test
+    public void test_If_Problem_Has_All_Fields__toString() {
+        Problem newProblem = new Problem("Broken Laptop", ProblemType.TECHNICAL);
+        String string = newProblem.toString();
+        assertTrue(string.contains("Broken Laptop"));
+        assertTrue(string.contains("TECHNICAL"));
+    }
 }
