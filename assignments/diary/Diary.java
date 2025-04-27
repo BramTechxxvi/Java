@@ -7,13 +7,14 @@ public class Diary {
     private String userName;
     private String password;
     private boolean isLocked;
-    private ArrayList<Entry> myEntries = new ArrayList<>();
+    private ArrayList<Entry> myEntries;
     private int entryId;
 
     public Diary(String userName, String password) {
         this.userName = userName;
         this.password = password;
         this.isLocked = true;
+        myEntries = new ArrayList<>();
 
         this.entryId = 1;
     }
@@ -64,5 +65,13 @@ public class Diary {
             entryToUpdate.setTitle(title);
             entryToUpdate.setBody(body);
         }
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

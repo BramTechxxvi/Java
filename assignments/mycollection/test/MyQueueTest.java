@@ -1,15 +1,15 @@
 package assignments.mycollection.test;
-import assignments.mycollection.MyQueue;
+import assignments.mycollection.RealQueue;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 public class MyQueueTest {
 
-    private MyQueue myQueue;
+    private RealQueue myQueue;
 
     @BeforeEach
     void setUp() {
-        myQueue = new MyQueue(3);
+        myQueue = new RealQueue(3);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class MyQueueTest {
 
     @Test
     public void testIfQueueIsFull_isFull() {
-        myQueue = new MyQueue(2);
+        myQueue = new RealQueue(2);
         myQueue.enqueue(3);
         myQueue.enqueue(4);
         assertTrue(myQueue.isFull());
@@ -60,7 +60,6 @@ public class MyQueueTest {
         myQueue.enqueue(6);
         myQueue.enqueue(7);
         assertEquals(5, myQueue.peek());
-        myQueue.viewQueue();
     }
 
     @Test
@@ -68,4 +67,15 @@ public class MyQueueTest {
         Exception exception = assertThrows(Exception.class, () -> myQueue.peek());
         assertEquals("Queue is empty", exception.getMessage());
     }
+
+    @Test
+    public void testIfQueueCanPeekElement_peekk() {
+        myQueue.enqueue(5);
+        myQueue.enqueue(6);
+        assertEquals(5, myQueue.dequeue());
+        myQueue.enqueue(7);
+        myQueue.viewQueue();
+    }
+
+
 }

@@ -1,4 +1,7 @@
 package assignments.mycollection;
+
+import java.util.NoSuchElementException;
+
 public class MyStack {
     private final int[] list;
     private int top;
@@ -20,7 +23,7 @@ public class MyStack {
     }
 
     public int peek() {
-        if (isEmpty()) throw new IllegalArgumentException("Stack is empty");
+        if (isEmpty()) throw new NoSuchElementException("Stack is empty");
         else return list[top];
     }
 
@@ -31,7 +34,7 @@ public class MyStack {
     }}
 
     public int pop() {
-        if (isEmpty()) throw new IllegalArgumentException("Stack is empty");
+        if (isEmpty()) throw new IndexOutOfBoundsException("Stack is empty");
         else return list[top--];
     }
 

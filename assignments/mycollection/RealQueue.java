@@ -1,10 +1,10 @@
 package assignments.mycollection;
-public class MyQueue {
+public class RealQueue {
     private int first;
     private int last;
     private final int[] list;
 
-    public MyQueue(int size) {
+    public RealQueue(int size) {
         list = new int[size];
         first = -1;
         last = -1;
@@ -15,10 +15,9 @@ public class MyQueue {
     }
 
     public void enqueue(int value) {
-        if (first == -1) first++;
         if (last == list.length - 1) throw new IllegalArgumentException("Queue is full");
         else list[++last] = value;
-        if (first == -1) first++;
+        if (first == -1) ++first;
     }
 
     public boolean isFull() {
@@ -26,9 +25,9 @@ public class MyQueue {
     }
 
     public int dequeue() {
-        int index = 0;
+        int index = list[first];
         if (isEmpty()) throw new IllegalArgumentException("Queue is empty");
-        if (first == 0) index = list[first--];
+        if (first == 0) index--;
         return index;
     }
 
@@ -38,6 +37,7 @@ public class MyQueue {
 
     public int peek() {
         if (isEmpty()) throw new IllegalArgumentException("Queue is empty");
+
         else return list[first];
     }
 }

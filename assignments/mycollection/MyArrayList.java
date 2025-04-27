@@ -4,8 +4,8 @@ public class MyArrayList {
     private int size;
     private int[] list;
 
-    public MyArrayList () {
-        list = new int[10];
+    public MyArrayList (int capacity) {
+        list = new int[capacity];
         size = 0;
     }
 
@@ -17,9 +17,20 @@ public class MyArrayList {
         }
 
     private void increaseSize() {
-        int[] newList = new int[list.length * 2];
+        int[] newList = new int[list.length + 1];
         for (int index = 0; index < list.length; index++) newList[index] = list[index];
         list = newList;
     }
 
-}
+    public int getSize() { return size; }
+
+    public void addAll(int[] otherList) {
+        for (int index: otherList) add(index);
+    }
+
+    public int remove(int index) { return index == size ? list[index] : list[index--]; }
+
+
+    }
+
+

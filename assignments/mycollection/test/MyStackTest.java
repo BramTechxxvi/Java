@@ -3,6 +3,9 @@ import assignments.mycollection.MyStack;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import java.util.NoSuchElementException;
+
 public class MyStackTest {
 
     private MyStack myStack;
@@ -44,7 +47,7 @@ public class MyStackTest {
 
     @Test
     public void test_If_Stack_Can_Pick_Items_When_Empty__ThrowsException() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> myStack.peek());
+        Exception exception = assertThrows(NoSuchElementException.class, () -> myStack.peek());
         assertEquals("Stack is empty", exception.getMessage());
     }
 
@@ -59,7 +62,7 @@ public class MyStackTest {
 
    @Test
    public void testIfStackCanRemoveElement_When_Empty__ThrowsException() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> myStack.pop());
+        Exception exception = assertThrows(IndexOutOfBoundsException.class, () -> myStack.pop());
         assertEquals("Stack is empty", exception.getMessage());
    }
 
