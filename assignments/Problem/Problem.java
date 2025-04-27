@@ -1,17 +1,25 @@
 package assignments.Problem;
-
-import java.util.ArrayList;
-
 public class Problem {
-    /*
+
     private String name;
-    private String type;
-    private ArrayList<Person> myPeople;
+    private ProblemType type;
     boolean isSolved;
 
-    public Problem() {}
+    public Problem(String name, ProblemType type) {
+        this.name = name;
+        this.type = type;
+        this.isSolved = false;
+    }
+    public void solve() { this.isSolved = true; }
 
- */
+    public boolean isSolved() { return isSolved; }
 
+    public String getName() { return name; }
 
+    public ProblemType getType() { return type; }
+
+    @Override
+    public String toString() {
+        return "Problem [name=" + name + ", type=" + type + "]";
+    }
 }
