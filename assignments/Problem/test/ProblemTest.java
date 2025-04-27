@@ -9,7 +9,7 @@ public class ProblemTest {
     private Problem myProblem;
     @BeforeEach
     public void setUp() {
-        myProblem = new Problem("Debt", ProblemType.FINANCIAL);
+        myProblem = new Problem("Debt", "Student loan", ProblemType.FINANCIAL);
     }
 
     @Test
@@ -33,8 +33,14 @@ public class ProblemTest {
     }
 
     @Test
+    public void test_If_Problem_Can_Get_Description__getDescription() {
+        assertEquals("FIN001", myProblem.getId());
+        Problem newProblem = new Problem("Debt", "Credit card", ProblemType.FINANCIAL);
+    }
+
+    @Test
     public void test_If_Problem_Has_All_Fields__toString() {
-        Problem newProblem = new Problem("Broken Laptop", ProblemType.TECHNICAL);
+        Problem newProblem = new Problem("Laptop", "Broken screen", ProblemType.TECHNICAL);
         String string = newProblem.toString();
         assertTrue(string.contains("Broken Laptop"));
         assertTrue(string.contains("TECHNICAL"));

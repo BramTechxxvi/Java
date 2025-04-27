@@ -38,7 +38,7 @@ class PersonTest {
         Problem problem2 = new Problem("I can't write", ProblemType.EDUCATIONAL);
         newPerson.addProblem(problem1);
         newPerson.addProblem(problem2);
-        newPerson.solveProblem(p);
+        newPerson.solveProblem(problem1);
         assertTrue(problem1.isSolved());
     }
 
