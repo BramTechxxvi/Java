@@ -17,7 +17,7 @@ public class Problem {
         this.isSolved = false;
     }
 
-    public void solve() { this.isSolved = true; }
+    public void solve() { isSolved = true; }
 
     public boolean isSolved() { return isSolved; }
 

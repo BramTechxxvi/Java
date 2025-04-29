@@ -16,13 +16,15 @@ public class Person {
     public void addProblem(Problem problem) { problems.add(problem); }
 
     public void solveProblem(Problem prob) {
-        for (Problem problem : problems) if (problem.equals(prob)) problem.solve();
+        for (Problem problem : problems) {
+            if (problem.equals(prob)) problem.solve();
+        }
     }
 
-    public int unSolvedProblems() {
+    public ArrayList<Problem> unSolvedProblems() {
         ArrayList<Problem> unSolved = new ArrayList<>();
         for (Problem problem : problems) {
             if (!problem.isSolved()) unSolved.add(problem);
-        } return unSolved.size();
+        } return unSolved;
     }
 }
