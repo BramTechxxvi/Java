@@ -2,9 +2,9 @@ package assignments.diary;
 import java.util.ArrayList;
 public class Diaries {
 
-    private ArrayList<Diary> diaries;
+    private final ArrayList<Diary> diaries;
 
-    public Diaries() { diaries = new ArrayList<Diary>(); }
+    public Diaries() { diaries = new ArrayList<>(); }
 
     public void add(Diary diary) { diaries.add(diary);}
 

@@ -3,7 +3,7 @@ public class Problem {
 
     private String name;
     private String description;
-    private ProblemType type;
+    private final ProblemType type;
     private boolean isSolved;
 
 

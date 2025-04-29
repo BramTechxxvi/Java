@@ -43,7 +43,6 @@ public class Diary {
         if (!isLocked) {
             for (int entry = 0; entry < myEntries.size(); entry++) {
                 if (myEntries.get(entry).getId() == entryId) myEntries.remove(entry);
-                break;
             }
         }
     }
