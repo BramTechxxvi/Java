@@ -43,6 +43,14 @@ class PersonTest {
     }
 
     @Test
-    public void test_If_Person_Can_Solve_Multiple_Problems__solve() {}
+    public void test_If_Person_Can_Count_Unsolved_Problems__unSolvedProblems() {
+        Problem problem1 = new Problem("Dream", "Bad dreams", ProblemType.SPIRITUAL);
+        Problem problem2 = new Problem("Illiteracy", "I can't write", ProblemType.EDUCATIONAL);
+        newPerson.addProblem(problem1);
+        newPerson.addProblem(problem2);
+        newPerson.solveProblem(problem1);
+        assertTrue(problem1.isSolved());
+        assertEquals(1, newPerson.unSolvedProblems());
+    }
 
 }
