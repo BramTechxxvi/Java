@@ -8,7 +8,11 @@ public class Diaries {
 
     public void add(Diary diary) { diaries.add(diary);}
 
-    public void findByUsername(String username) {}
+    public Diary findByUsername(String username) {
+        for (Diary diary : diaries) {
+            if (diary.getUserName().equals(username)) return diary;
+        } return null;
+    }
 
     public void delete(Diary diary) { diaries.remove(diary); }
 

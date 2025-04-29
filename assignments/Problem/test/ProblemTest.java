@@ -52,7 +52,6 @@ public class ProblemTest {
 
     @Test
     public void test_If_Problem_Can_Create_With_Invalid_Description__ThrowsException() {
-        Problem newProblem;
         Exception exception = assertThrows(IllegalArgumentException.class, ()-> {
             new Problem("Debt", "", ProblemType.FINANCIAL);
         });
