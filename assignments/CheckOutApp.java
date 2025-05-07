@@ -19,12 +19,12 @@ ArrayList<Integer> quantity = new ArrayList<>();
 	customerName = userInput.next();
 			userInput.nextLine();
 	
-		do {
-		System.out.println("\nWhat item did the user purchase? ");
-		itemBought = userInput.next();
-			itemBoughts.add(itemBought);
+	do {
+	System.out.println("\nWhat item did the user purchase? ");
+	itemBought = userInput.next();
+	itemBoughts.add(itemBought);
 
-					userInput.nextLine();
+				userInput.nextLine();
 				do {
 				System.out.print("\nHow many pieces? ");
 				itemPieces = userInput.nextInt();
