@@ -33,12 +33,15 @@ public class TurtleGraphicsTest {
     }
 
     @Test
-    public void testThatPenCanChangeDirectionFromWestToEast__turnRight() {
+    public void testThatPenCanChangeDirectionFromEastSouth__turnRight() {
         assertTrue(grid.penIsUP());
         assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
         grid.turnRight();
         assertEquals(Direction.valueOf("SOUTH"), grid.getCurrentDirection());
     }
+
+    @Test
+    public void testThatPencanChangeDirectionFromEastToWest__turnLeft() {}
 
 
 }
