@@ -6,12 +6,14 @@ public class TurtleGraphics {
     private int col;
     private char[][] grid;
     private PenPosition penPosition;
+    private Direction currentDirection;
 
     public TurtleGraphics() {
         //this.row = row;
         //this.col = col;
         this.grid = new char[row][col];
         this.penPosition = PenPosition.UP;
+        this.currentDirection = Direction.EAST;
     }
 
     public boolean penIsUP() {
@@ -27,9 +29,11 @@ public class TurtleGraphics {
     }
 
     public void turnRight() {
-        if (Direction == "EAST"}
+        if (currentDirection == Direction.EAST) currentDirection = Direction.SOUTH;
+    }
 
-
+    public Direction getCurrentDirection() { return currentDirection; }
+    }
 /*
     public void displayGrid() {
         for (int row = 0; row < grid.length; row++) {
@@ -40,4 +44,4 @@ public class TurtleGraphics {
     }
 
  */
-}
+

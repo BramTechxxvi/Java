@@ -34,7 +34,8 @@ public class TurtleGraphicsTest {
 
     @Test
     public void testThatPenCanChangeDirectionFromWestToEast__turnRight() {
-        assertFalse(grid.penIsUP());
+        assertTrue(grid.penIsUP());
+        assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
         grid.turnRight();
         assertEquals(Direction.valueOf("SOUTH"), grid.getCurrentDirection());
     }
