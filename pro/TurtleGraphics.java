@@ -5,31 +5,32 @@ public class TurtleGraphics {
     private int row;
     private int col;
     private char[][] grid;
-    private boolean penStatus;
+    private PenPosition penPosition;
 
     public TurtleGraphics() {
-        this.row = row;
-        this.col = col;
+        //this.row = row;
+        //this.col = col;
         this.grid = new char[row][col];
+        this.penPosition = PenPosition.UP;
     }
 
     public boolean penIsDown() {
-       return penStatus;
+        return penPosition == PenPosition.DOWN;
     }
 
     public void togglePenUp () {
-        penStatus = false;
+        penPosition = PenPosition.UP;
     }
 
     public void togglePenDown() {
-        penStatus = true;
-    }
-    /*
-    public int move(int numOfSteps) {
-        if (numOfSteps < 0) {}
+        penPosition = PenPosition.DOWN;
     }
 
-     */
+   // public int move(int numOfSteps) {
+     //   if (numOfSteps < 0) throw new IllegalArgumentException("You have to enter a positive number");
+
+
+/*
     public void displayGrid() {
         for (int row = 0; row < grid.length; row++) {
             for (int col = 0; col < grid[row].length; col++) {
@@ -38,4 +39,5 @@ public class TurtleGraphics {
         } System.out.println();
     }
 
+ */
 }

@@ -16,6 +16,7 @@ public class TurtleGraphicsTest {
     public void testThatPenIsUp__penIsDown() {
         assertFalse(grid.penIsDown());
     }
+
     @Test
     public void testThatPenIsUp__togglePenUp() {
         grid.togglePenDown();
@@ -23,13 +24,15 @@ public class TurtleGraphicsTest {
         assertFalse(grid.penIsDown());
     }
 
-
     @Test
     public void testThatPenIsDown__togglePenDown() {
         grid.togglePenUp();
         grid.togglePenDown();
         assertTrue(grid.penIsDown());
     }
+
+    @Test
+    public void testThatPenCanMove__movePen() {}
 
 
 }
