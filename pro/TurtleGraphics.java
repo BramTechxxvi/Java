@@ -14,8 +14,8 @@ public class TurtleGraphics {
         this.penPosition = PenPosition.UP;
     }
 
-    public boolean penIsDown() {
-        return penPosition == PenPosition.DOWN;
+    public boolean penIsUP() {
+        return penPosition == PenPosition.UP;
     }
 
     public void togglePenUp () {
@@ -26,8 +26,8 @@ public class TurtleGraphics {
         penPosition = PenPosition.DOWN;
     }
 
-   // public int move(int numOfSteps) {
-     //   if (numOfSteps < 0) throw new IllegalArgumentException("You have to enter a positive number");
+    public void turnRight() {
+        if (Direction == "EAST"}
 
 
 /*

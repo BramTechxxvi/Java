@@ -1,4 +1,5 @@
 package proTest;
+import pro.Direction;
 import pro.TurtleGraphics;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -13,26 +14,30 @@ public class TurtleGraphicsTest {
     }
 
     @Test
-    public void testThatPenIsUp__penIsDown() {
-        assertFalse(grid.penIsDown());
+    public void testThatPenIsUp__penIsUP() {
+        assertTrue(grid.penIsUP());
     }
 
     @Test
     public void testThatPenIsUp__togglePenUp() {
         grid.togglePenDown();
+        assertFalse(grid.penIsUP());
         grid.togglePenUp();
-        assertFalse(grid.penIsDown());
+        assertTrue(grid.penIsUP());
     }
 
     @Test
     public void testThatPenIsDown__togglePenDown() {
-        grid.togglePenUp();
         grid.togglePenDown();
-        assertTrue(grid.penIsDown());
+        assertFalse(grid.penIsUP());
     }
 
     @Test
-    public void testThatPenCanMove__movePen() {}
+    public void testThatPenCanChangeDirectionFromWestToEast__turnRight() {
+        assertFalse(grid.penIsUP());
+        grid.turnRight();
+        assertEquals(Direction.valueOf("SOUTH"), grid.getCurrentDirection());
+    }
 
 
 }
