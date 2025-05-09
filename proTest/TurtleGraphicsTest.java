@@ -33,15 +33,41 @@ public class TurtleGraphicsTest {
     }
 
     @Test
-    public void testThatPenCanChangeDirectionFromEastSouth__turnRight() {
-        assertTrue(grid.penIsUP());
+    public void testThatPenCanChangeDirectionFromEastToSouth__turnRight() {
         assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
         grid.turnRight();
         assertEquals(Direction.valueOf("SOUTH"), grid.getCurrentDirection());
     }
 
     @Test
-    public void testThatPencanChangeDirectionFromEastToWest__turnLeft() {}
+    public void testThatPenCanChangeDirectionFromSouthToWest__turnLeft() {
+        assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
+        grid.turnRight();
+        grid.turnRight();
+        assertEquals(Direction.valueOf("WEST"), grid.getCurrentDirection());
+    }
+
+    @Test
+    public void testThatPenCanChangeDirectionFromWestToNorth__turnRight() {
+        assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
+        grid.turnRight();
+        grid.turnRight();
+        grid.turnRight();
+        assertEquals(Direction.valueOf("NORTH"), grid.getCurrentDirection());
+
+    }
+
+    @Test
+    public void testThatPenCanChangeDirectionFromEastToNorth__turnLeft() {
+        assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
+        grid.turnLeft();
+        assertEquals(Direction.valueOf("NORTH"), grid.getCurrentDirection());
+    }
+
+    @Test
+    public void testThatPenCanChangeDirectionFromNorthToWest__turnLeft() {
+        assertEquals(Direction.valueOf("EAST"), grid.getCurrentDirection());
+    }
 
 
 }

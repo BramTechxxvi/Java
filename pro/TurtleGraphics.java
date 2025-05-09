@@ -29,7 +29,13 @@ public class TurtleGraphics {
     }
 
     public void turnRight() {
+        if (currentDirection == Direction.WEST) currentDirection = Direction.NORTH;
+        if (currentDirection == Direction.SOUTH) currentDirection = Direction.WEST;
         if (currentDirection == Direction.EAST) currentDirection = Direction.SOUTH;
+    }
+
+    public void turnLeft() {
+        if (currentDirection == Direction.EAST) currentDirection = Direction.NORTH;
     }
 
     public Direction getCurrentDirection() { return currentDirection; }
