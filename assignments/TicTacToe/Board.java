@@ -1,8 +1,10 @@
 package assignments.TicTacToe;
 
+import java.util.Arrays;
+
 public class Board {
     private static final int size = 3;
-    private char[][] grid;
+    private final char[][] grid;
 
     public Board() {
         this.grid = new char[size][size];
@@ -10,22 +12,27 @@ public class Board {
     }
 
     public boolean isEmpty() {
-        for (int count = 0; count < grid.length; count++) {
-        for (int counter = 0; counter < grid[count].length; counter++) {
-            if (grid[count][counter] != ' ') return false;
+        for (int row = 0; row < grid.length; row++) {
+        for (int col = 0; col < grid[row].length; col++) {
+            if (grid[row][col] != ' ') return false;
         }} return true;
     }
 
     private void initializeGrid() {
-        for (int count = 0; count < grid.length; count++) {
-        for (int counter = 0; counter < grid[count].length; counter++) {
-           grid[count][counter] = ' ';
+        for (int row = 0; row < grid.length; row++) {
+        for (int col = 0; col < grid[row].length; col++) {
+           grid[row][col] = ' ';
         }}
     }
 
-    public void getGrid() {
+    public char[][] getGrid() { return grid; }
+
+    public void displayGrid() {
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[row].length; col++) {
+            System.out.print("| " + grid[row][col]);
+            }
+        } System.out.println("___+ __+");
     }
-
-
 
 }
