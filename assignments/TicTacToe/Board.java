@@ -28,16 +28,14 @@ public class Board {
     public char[][] getGrid() { return grid; }
 
     public void displayGrid() {
+        System.out.println("___________");
         for (int row = 0; row < grid.length; row++) {
-        for (int col = 0; col < grid[row].length; col++) {
-            System.out.print(' ' + grid[row][col]);
-            if (col < grid[row].length - 1) System.out.print("|");
-        } System.out.println();
-        if (row < grid.length - 1) System.out.print("__");
+            for (int col = 0; col < grid[row].length; col++) {
+                System.out.print(" " + grid[row][col]);
+                if (col < grid[row].length - 1) System.out.print(" |");
+            } System.out.print("\n___________");
+
         }
-
-   // public String toString() {
-
     }
 
 }
