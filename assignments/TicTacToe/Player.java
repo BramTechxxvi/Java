@@ -2,7 +2,7 @@ package assignments.TicTacToe;
 
 public enum Player {
     X('X'),
-    O('0');
+    O('O');
 
     private char symbol;
 
@@ -14,8 +14,6 @@ public enum Player {
         return symbol;
     }
 
-    public void makeMove() {
-    }
 
 }
 

@@ -1,7 +1,5 @@
 package assignments.TicTacToe;
 
-import java.util.Arrays;
-
 public class Board {
     private static final int size = 3;
     private final char[][] grid;
@@ -28,14 +26,19 @@ public class Board {
     public char[][] getGrid() { return grid; }
 
     public void displayGrid() {
-        System.out.println("___________");
+        System.out.println("___+___+___");
         for (int row = 0; row < grid.length; row++) {
-            for (int col = 0; col < grid[row].length; col++) {
-                System.out.print(" " + grid[row][col]);
-                if (col < grid[row].length - 1) System.out.print(" |");
-            } System.out.print("\n___________");
-
+        for (int col = 0; col < grid[row].length; col++) {
+            System.out.print(" " + grid[row][col]);
+            if (col < grid[row].length - 1) System.out.print(" |");
+            } System.out.println("\n___+___+___");
         }
     }
+
+    public void placeMove(int row, int col, Player player) {
+        getGrid()[row][col] = player.getSymbol();
+    }
+
+
 
 }
