@@ -3,7 +3,7 @@ package data.repository;
 import data.models.Resident;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.Optional; nnn
 
 public interface ResidentRepository {
 
