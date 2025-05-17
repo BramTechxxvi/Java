@@ -5,77 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="176e9f49-26aa-411b-be36-24357d841459" name="Changes" comment="new commit">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/Diarytest/DiaryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/TicTacTest/TicTacToeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/TurtleTest/TurtleGraphicsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/collecrtionTest/MyArrayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/collecrtionTest/MyQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/collecrtionTest/MyStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/gateOneTest/bankeBankTest/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/gateOneTest/bankeBankTest/BankAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/gateOneTest/menstrualWahalaTest/MenstrualAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/nigeriaTest/PoliticalZoneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/problemTest/PersonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/problemTest/ProblemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/tddTest/AirConditionerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignmentTest/tddTest/AutomaticBikeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Estore/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Estore/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Estore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Estore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Estore/Estore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Problem/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Things/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/TicTacToe/TicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/TicTacToe/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/GridPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/PenPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/Turtle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/TurtleGraphics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Turtle/turtle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/allKata/ArrayKata.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/allKata/BeginnerArrayKata.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaLogisticsApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaOrderApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beginTask/TaskOne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beginTask/TaskSeven.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beginTask/TaskSix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chaptersExercises/ChapterFive.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chaptersExercises/ChapterFour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGate/layeredGate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layeredGatePass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Estore/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Estore/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Estore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Estore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Estore/Estore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Problem/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Things/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/TicTacToe/Untitled Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/Turtle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/assignments/Turtle/turtle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mr Chibuzor/thing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentGrade/StudentGradingApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layeredGatePass" beforeDir="false" afterPath="$PROJECT_DIR$/layeredGatePass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,15 +281,7 @@
       <workItem from="1747406914171" duration="97000" />
       <workItem from="1747488115014" duration="4177000" />
       <workItem from="1747493048398" duration="1623000" />
-      <workItem from="1747494849372" duration="949000" />
-    </task>
-    <task id="LOCAL-00013" summary="new commit">
-      <option name="closed" value="true" />
-      <created>1744128077148</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1744128077148</updated>
+      <workItem from="1747494849372" duration="1254000" />
     </task>
     <task id="LOCAL-00014" summary="new commit">
       <option name="closed" value="true" />
@@ -745,7 +667,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747489820435</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1747496079694</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1747496079694</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
