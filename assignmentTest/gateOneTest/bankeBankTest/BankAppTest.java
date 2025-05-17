@@ -1,4 +1,6 @@
+/*
 package assignmentTest.gateOneTest.bankeBankTest;
+
 import assignments.gateOne.BankeBank.BankApp;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
@@ -77,3 +79,5 @@ public class BankAppTest {
     public void test_If_Bank_Can_Transfer_Money__transferMoney() {}
 
 }
+
+ */

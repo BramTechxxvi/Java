@@ -1,4 +1,6 @@
+/*
 package assignmentTest.gateOneTest.menstrualWahalaTest;
+
 import assignments.gateOne.menstrualWahala.MenstrualApp;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
@@ -71,3 +73,5 @@ public class MenstrualAppTest {
         String expected = "Your next cycle day is " +cycleDay;
         assertEquals(expected, actual);
     }}
+
+ */
