@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="176e9f49-26aa-411b-be36-24357d841459" name="Changes" comment="new commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignmentTest/TicTacTest/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignmentTest/TicTacTest/TicTacToeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Estore/Estore.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Problem/Untitled Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Things/Untitled Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaLogisticsApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaOrderApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layeredGatePass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thing.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BramTechxxvi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BramTechxxvi/Java.git&quot;,
+    &quot;accountId&quot;: &quot;fc825726-6b9c-4a89-9257-ab5850911d07&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assignments/nigeria/NigeriaTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uKzKpXE5utSkxLIhbzDtHp4O03" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AutomaticBike.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankeAtmApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankePOSMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Diary.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Entry.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GridPractice.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenstrualApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieRatingSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testAccount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanChangePin_changePin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanDepositNegativeAmountAndReturnException_deposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanDepositNegativeAmountAndReturnZero_deposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanDepositNegativeAmount_deposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanDeposit_deposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanGetAccountName_getAccountName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanWithdrawAmountFromZeroBalanceAndReturnException_withdraw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanWithdrawNegativeAmountAndReturnZero_withdraw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanWithdrawWithInvalidPinAndReturnException_withdraw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanWithdraw_5k_From_3k_BalanceAndReturnException_withdraw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountCanWithdraw_withdraw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountHasBalanceWithInvalidPin_getBalance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAccountHasBalance_getBalance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountTest.testIfAcountCanChangePinAsOldPin_changePin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionDecreaseTemperature.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionIncreaseTemperature (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionIncreaseTemperature.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionReturnTemperature.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionSwitchOffAC_switchOffAc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testFunctionSwitchOnAC_switchOnAc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testIncreaseTemperatureWhenNotOn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testInitialState.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testThatFunctionSwitchOnAC_switchOnAc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testThatTemperatureCannotChangeWhenOff.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AirConditionerTest.testThatTemperatureCannotWhenNotOn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanAccelerate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanAccelerateInGearFour_accelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanAccelerateInGearOne_accelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanAccelerateInGearThree_accelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanAccelerateInGearTwo_accelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanDecelerateInGearFour_decelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanDecelerateInGearOne_accelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanDecelerateInGearThree_decelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeCanDecelerateInGearTwo_decelerateBike.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeIsOff.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeIsOn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatAutomaticBikeOff.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatBikeCannotAccelerateWhenOff.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AutomaticBikeTest.testThatBikeCannotAsccelerateWhenOff.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAppTest.test_If_Bank_Can_Withdraw_Money__withdrawMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAppTest.test_if_Bank_Can_Account_Can_Deposit_Negative_Amount_And_Return_Exception__depositMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankAppTest.test_if_Bank_Can_Account_Can_deposit_money__depositMoney.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DiaryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiaryTest.test_If_Diary_Can_Create_Entry__createEntry.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiaryTest.test_If_Diary_Can_Delete_Entry__deleteEntry.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiaryTest.test_If_Diary_Can_Lock__lockDiary.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiaryTest.test_If_Diary_Can_Unlock_With_Incorrect_Password__Throws_Exception.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiaryTest.test_If_Diary_Can_Unlock__unlockDiary.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testEndOfYear_getPeriodLength.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfFertileWindowIsValid_getFertileWindow.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfNameIsValid_getUserName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfOvulationPeriodIsValid_getOvulationPeriod.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfPeriodLengthIsValid_getPeriodLength.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfSafePeriodLengthIsValid_getSafePeriodLength.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfSecondSafePeriodIsValid_getSecondSafePeriod.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenstrualAppTest.testIfn_getCycleLength.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovieRatingSystemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTest.testThatArrayListIsEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTest.test_If_ArrayList_Can_Add_A_Collection__addAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTest.test_If_ArrayList_Can_Increase_Size_When_Full__add.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.testIfQueueCanAddElement_enqueue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.testIfQueueCanPeekElement_peek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.testIfQueueCanPeekElement_peekk.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.testIfQueueCanRemoveElement_dequeue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.testIfQueueIsFull_isFull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.test_If_Queue_Can_Add_Element_When_Full__ThrowsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyQueueTest.test_If_Queue_Can_Peek_Element_When_Empty__ThrowsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testIfStackCanAddElement_push.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatStackCanAddElement_push.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatStackCanPickItems_peek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatStackCanRemoveElement_pop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatStackIsEmpty_isEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatStackIsFull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testThatsTACKcAnPickItesm_peek.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyStackTest.testViewElements_viewStack.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NigeriaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.test_If_Person_Can_Add_Problem__addProblem.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PoliticalZoneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PoliticalZoneTest.test_If_Nigeria_Can_Get_All_Geo_Political_Zones.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.PoliticalZoneTest.test_If_Nigeria_Can_Get_All_States.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProblemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProblemTest.test_If_Problem_Can_Create_With_Invalid_name__ThrowsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProblemTest.test_If_Problem_Can_Get_Description__getDescription.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProblemTest.test_if_Problem_Is_Solved__isSolved.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicTacToeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicTacToeTest.testInvalidPosition__ThrowsException.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TurtleGraphicsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TurtleGraphicsTest.testThatPenIsDown__penIsDown.executor&quot;: &quot;Debug&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Mr Chibuzor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="assignments.TicTacToe" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Mr Chibuzor\layeredGate\src\data" />
+      <recent name="C:\Users\Dell\Desktop\Mr Chibuzor\assignments\Estore" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TicTacToeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mr Chibuzor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignmentTest.TicTacTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignmentTest.TicTacTest" />
+      <option name="MAIN_CLASS_NAME" value="assignmentTest.TicTacTest.TicTacToeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TurtleGraphicsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mr Chibuzor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignmentTest.TurtleTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="proTest" />
+      <option name="MAIN_CLASS_NAME" value="assignmentTest.TurtleTest.TurtleGraphicsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicTacToeTest" />
+        <item itemvalue="JUnit.TurtleGraphicsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="176e9f49-26aa-411b-be36-24357d841459" name="Changes" comment="" />
+      <created>1742011992918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742011992918</updated>
+      <workItem from="1742012002105" duration="9575000" />
+      <workItem from="1742207630687" duration="614000" />
+      <workItem from="1742289360518" duration="11686000" />
+      <workItem from="1742731384782" duration="40436000" />
+      <workItem from="1743521232761" duration="9411000" />
+      <workItem from="1743601839514" duration="1239000" />
+      <workItem from="1743607157384" duration="604000" />
+      <workItem from="1743608001391" duration="25000" />
+      <workItem from="1743608050348" duration="4001000" />
+      <workItem from="1743698472800" duration="8628000" />
+      <workItem from="1743734244585" duration="31009000" />
+      <workItem from="1744084103316" duration="28895000" />
+      <workItem from="1744135528342" duration="17511000" />
+      <workItem from="1744198857932" duration="76948000" />
+      <workItem from="1744728097722" duration="61800000" />
+      <workItem from="1745151216103" duration="3181000" />
+      <workItem from="1745155572628" duration="1464000" />
+      <workItem from="1745158427549" duration="21161000" />
+      <workItem from="1745231728827" duration="12015000" />
+      <workItem from="1745245636723" duration="9407000" />
+      <workItem from="1745260881142" duration="1762000" />
+      <workItem from="1745263044328" duration="24087000" />
+      <workItem from="1745339710127" duration="96431000" />
+      <workItem from="1745942521034" duration="57335000" />
+      <workItem from="1746515552604" duration="9940000" />
+      <workItem from="1746615487370" duration="19999000" />
+      <workItem from="1746707944541" duration="6020000" />
+      <workItem from="1746736184952" duration="4331000" />
+      <workItem from="1746743318141" duration="2615000" />
+      <workItem from="1746766556733" duration="19948000" />
+      <workItem from="1746789977615" duration="11483000" />
+      <workItem from="1747116269510" duration="901000" />
+      <workItem from="1747121600677" duration="32000" />
+      <workItem from="1747121657285" duration="8253000" />
+      <workItem from="1747406914171" duration="97000" />
+      <workItem from="1747488115014" duration="4177000" />
+      <workItem from="1747493048398" duration="1623000" />
+      <workItem from="1747494849372" duration="949000" />
+      <workItem from="1747569077757" duration="2208000" />
+      <workItem from="1747571365117" duration="510000" />
+    </task>
+    <task id="LOCAL-00013" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744128077148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744128077148</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744133894587</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1744133894588</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744221180210</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1744221180210</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744255147985</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1744255147985</updated>
+    </task>
+    <task id="LOCAL-00017" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744266079151</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1744266079151</updated>
+    </task>
+    <task id="LOCAL-00018" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744267793555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1744267793555</updated>
+    </task>
+    <task id="LOCAL-00019" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1744273747573</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744273747573</updated>
+    </task>
+    <task id="LOCAL-00020" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745246822339</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745246822339</updated>
+    </task>
+    <task id="LOCAL-00021" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745247566956</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745247566956</updated>
+    </task>
+    <task id="LOCAL-00022" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745327428688</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1745327428688</updated>
+    </task>
+    <task id="LOCAL-00023" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745339917253</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1745339917253</updated>
+    </task>
+    <task id="LOCAL-00024" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745408540630</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1745408540630</updated>
+    </task>
+    <task id="LOCAL-00025" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745462713270</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1745462713270</updated>
+    </task>
+    <task id="LOCAL-00026" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745734922131</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1745734922131</updated>
+    </task>
+    <task id="LOCAL-00027" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745758906875</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1745758906875</updated>
+    </task>
+    <task id="LOCAL-00028" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745760027984</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1745760027985</updated>
+    </task>
+    <task id="LOCAL-00029" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745760118825</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1745760118825</updated>
+    </task>
+    <task id="LOCAL-00030" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745761511409</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1745761511410</updated>
+    </task>
+    <task id="LOCAL-00031" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745767422987</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1745767422988</updated>
+    </task>
+    <task id="LOCAL-00032" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745769381312</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1745769381312</updated>
+    </task>
+    <task id="LOCAL-00033" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745770204983</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1745770204984</updated>
+    </task>
+    <task id="LOCAL-00034" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745770432427</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1745770432427</updated>
+    </task>
+    <task id="LOCAL-00035" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745770461083</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745770461083</updated>
+    </task>
+    <task id="LOCAL-00036" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745780791912</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1745780791912</updated>
+    </task>
+    <task id="LOCAL-00037" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745903655523</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1745903655524</updated>
+    </task>
+    <task id="LOCAL-00038" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745904509720</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1745904509720</updated>
+    </task>
+    <task id="LOCAL-00039" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745905471024</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1745905471024</updated>
+    </task>
+    <task id="LOCAL-00040" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745906046847</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1745906046850</updated>
+    </task>
+    <task id="LOCAL-00041" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1745948918621</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1745948918621</updated>
+    </task>
+    <task id="LOCAL-00042" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746090456074</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1746090456074</updated>
+    </task>
+    <task id="LOCAL-00043" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746090677079</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1746090677079</updated>
+    </task>
+    <task id="LOCAL-00044" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746096223192</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1746096223192</updated>
+    </task>
+    <task id="LOCAL-00045" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746516501524</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1746516501525</updated>
+    </task>
+    <task id="LOCAL-00046" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746617144069</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1746617144069</updated>
+    </task>
+    <task id="LOCAL-00047" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746617374507</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746617374507</updated>
+    </task>
+    <task id="LOCAL-00048" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746692673477</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1746692673477</updated>
+    </task>
+    <task id="LOCAL-00049" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746724842906</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1746724842906</updated>
+    </task>
+    <task id="LOCAL-00050" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746731336503</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1746731336504</updated>
+    </task>
+    <task id="LOCAL-00051" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746737332670</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1746737332671</updated>
+    </task>
+    <task id="LOCAL-00052" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746737403381</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1746737403381</updated>
+    </task>
+    <task id="LOCAL-00053" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746765651295</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1746765651296</updated>
+    </task>
+    <task id="LOCAL-00054" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746773402656</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1746773402657</updated>
+    </task>
+    <task id="LOCAL-00055" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746780296130</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1746780296130</updated>
+    </task>
+    <task id="LOCAL-00056" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746786954535</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1746786954535</updated>
+    </task>
+    <task id="LOCAL-00057" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746788884104</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1746788884104</updated>
+    </task>
+    <task id="LOCAL-00058" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1746793417289</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1746793417290</updated>
+    </task>
+    <task id="LOCAL-00059" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1747150585591</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1747150585591</updated>
+    </task>
+    <task id="LOCAL-00060" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1747488204440</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1747488204440</updated>
+    </task>
+    <task id="LOCAL-00061" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1747489820435</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1747489820435</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AirConditionerTest.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AutomaticBikeTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AirConditionerTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AutomaticBikeTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/collecrtionTest/MyStackTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/gateOneTest/bankeBankTest/AccountTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignments/gateOne/BankeBank/BankApp.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/gateOneTest/bankeBankTest/BankAppTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignments/diary/Diary.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/collecrtionTest/MyStackTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/problemTest/ProblemTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/TurtleGraphicsTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/TurtleGraphicsTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AirConditionerTest.java</url>
+          <line>24</line>
+          <properties class="assignmentTest.TurtleTest.tddTest.AirConditionerTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AutomaticBikeTest.java</url>
+          <line>26</line>
+          <properties class="assignmentTest.TurtleTest.tddTest.AutomaticBikeTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/TurtleTest/tddTest/AutomaticBikeTest.java</url>
+          <line>49</line>
+          <properties class="assignmentTest.TurtleTest.tddTest.AutomaticBikeTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/collecrtionTest/MyStackTest.java</url>
+          <line>22</line>
+          <properties class="assignmentTest.collecrtionTest.MyStackTest" method="testIfStackCanAddElement_push">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/gateOneTest/menstrualWahalaTest/MenstrualAppTest.java</url>
+          <line>43</line>
+          <properties class="assignmentTest.gateOneTest.menstrualWahalaTest.MenstrualAppTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/assignmentTest/Diarytest/DiaryTest.java</url>
+          <line>15</line>
+          <properties class="assignmentTest.Diarytest.DiaryTest" method="test_If_Diary_Can_Unlock__unlockDiary">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$MenstrualApp.ic" NAME="MenstrualApp Coverage Results" MODIFIED="1744209400644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.gateOne.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$AccountTest.ic" NAME="AccountTest Coverage Results" MODIFIED="1745238524722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.gateOne.BankeBank.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$MyStackTest.ic" NAME="MyStackTest Coverage Results" MODIFIED="1744209638693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.mycollection.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$MenstrualAppTest.ic" NAME="MenstrualAppTest Coverage Results" MODIFIED="1744266826895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.gateOne.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$AutomaticBikeTest.ic" NAME="AutomaticBikeTest Coverage Results" MODIFIED="1744209687241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.tddSnacks.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$AirConditionerTest_testFunctionSwitchOffAC_switchOffAc.ic" NAME="AirConditionerTest.testFunctionSwitchOffAC_switchOffAc Coverage Results" MODIFIED="1743599163634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$AirConditionerTest.ic" NAME="AirConditionerTest Coverage Results" MODIFIED="1744209747345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.tddSnacks.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mr_Chibuzor$BankAppTest.ic" NAME="BankAppTest Coverage Results" MODIFIED="1745238481436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>assignments.gateOne.BankeBank.test.*</FILTER>
+    </SUITE>
+  </component>
+</project>
