@@ -1,4 +1,3 @@
-/*
 package assignmentTest.TicTacTest;
 
 import assignments.TicTacToe.Board;
@@ -27,9 +26,10 @@ public class TicTacToeTest {
     public void testThatBoardIsFull__() {
         char[][] grid = board.getGrid();
         for (int row = 0; row < grid.length; row++) {
-        for (int col = 0; col < grid[row].length; col++) {
-            grid[row][col] = 'X';
-        }}
+            for (int col = 0; col < grid[row].length; col++) {
+                grid[row][col] = 'X';
+            }
+        }
         assertFalse(playGame.isBoardEmpty());
     }
 
@@ -57,9 +57,4 @@ public class TicTacToeTest {
         Exception exception2 = assertThrows(IllegalArgumentException.class, () -> playGame.makeMove(10, Player.O));
         assertEquals(exception2.getMessage(), "Invalid position");
     }
-
-    @Test
-    public void test(){
-        Exception exception =
-    }
-*/
+}
