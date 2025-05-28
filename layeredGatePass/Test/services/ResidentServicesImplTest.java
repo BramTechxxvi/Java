@@ -31,4 +31,23 @@ class ResidentServicesImplTest {
         assertEquals("1", response.getId());
     }
 
+    @Test
+    public void registerNewResidentWithInvalidEmail__throwsException() {
+        RegisterResidentRequest request = new RegisterResidentRequest();
+        request.setFullName("Adedeji Ibrahim");
+        request.setAddress("123 Main Street");
+        request.setEmail("adedeji@f_ake.com");
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> residentServices.register(request));
+        assertEquals(exception.getMessage(), "Invalid email");
+    }
+
+    @Test
+    public void registerNewResidentWithNoEmail__throwsException() {
+        RegisterResidentRequest request = new RegisterResidentRequest();
+        request.setFullName("Adedeji Ibrahim");
+        request.setAddress("123 Main street");
+        request.setEmail(" ");
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> residentServices.register(request));
+        assertEquals(exception.getMessage(), "Invalid email");
+    }
 }

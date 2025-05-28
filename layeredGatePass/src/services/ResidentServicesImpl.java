@@ -11,16 +11,15 @@ public class ResidentServicesImpl implements ResidentServices {
 
     public ResidentServicesImpl(ResidentRepository residentRepository) {
         this.residentRepository = residentRepository;
-}
+    }
 
     @Override
     public RegisterResidentResponse register(RegisterResidentRequest request) {
+        verifyEmail(request.getEmail());
         Resident resident = new Resident();
         resident.setFullName(request.getFullName());
         resident.setEmail(request.getEmail());
-        verifyEmail(request.getEmail());
         resident.setPhone(request.getPhone());
-        verifyPhone(request.getPhone());
         resident.setAddress(request.getAddress());
         Resident savedResident = residentRepository.save(resident);
 
@@ -34,12 +33,16 @@ public class ResidentServicesImpl implements ResidentServices {
         return response;
     }
 
-    private String verifyEmail(String email) {
-        if (email == null || email.isEmpty()) {
+    private void verifyEmail(String email) {
+        if (email == null || email.isEmpty() || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+            throw new IllegalArgumentException("Invalid email");
+        }
         for (Resident resident : residentRepository.findAll()) {
-            if (!resident.getEmail().equals(email)) return email;
+            if (email.equals(resident.getEmail())) throw new IllegalArgumentException("Email already exists");
         }
     }
 
-    private String verifyPhone(String phone) {}
+    private void verifyPhone(String phone) {}
+
+
 }
