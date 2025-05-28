@@ -94,7 +94,7 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @Test
-        public void findAllResident__finfAllTest() {
+        public void findAllResident__findAllTest() {
             Resident firstResident = new Resident();
             Resident secondResident = new Resident();
             resident.save(firstResident);

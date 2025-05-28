@@ -42,7 +42,7 @@ public class Residents implements ResidentRepository {
     @Override
     public void deleteByid(String id) {
         for (int count = 0; count < residents.size(); count++) {
-            if (residents.get(count).getId().equals(id)) residents.remove(count);
+            if (residents.get(count).getId().equals(id)) residents.remove(residents.get(count));
         }
     }
 
@@ -69,7 +69,7 @@ public class Residents implements ResidentRepository {
     public List<Resident> findAllByFullName(String fullName) {
         List<Resident> houseOwner = new ArrayList<>();
         for (Resident resident : residents) {
-            if (resident.getFullName().equals(fullName)) houseOwner.add(resident);
+            if (resident.getFullName().equalsIgnoreCase(fullName)) houseOwner.add(resident);
         }
         return houseOwner;
     }
@@ -85,12 +85,15 @@ public class Residents implements ResidentRepository {
         return residents.size();
     }
 
+    /*
     @Override
     public boolean equals(Object o) {
         if(this == o) return true;
         if(o == null || getClass() != o.getClass()) return false;
         Resident resident = (Resident) o;
-        Object id = null;
-        return Objects.equals(id, resident.getId());
+        return Objects.equals(this, resident);
     }
+
+     */
+
 }
