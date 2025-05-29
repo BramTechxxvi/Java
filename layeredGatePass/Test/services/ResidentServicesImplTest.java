@@ -3,6 +3,7 @@ package services;
 import data.repository.ResidentRepository;
 import data.repository.Residents;
 import dtos.request.RegisterResidentRequest;
+import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,12 +14,14 @@ class ResidentServicesImplTest {
     private ResidentRepository residentRepository;
     private ResidentServices residentServices;
     private RegisterResidentRequest request;
+    private ResidentLoginRequest loginRequest;
 
     @BeforeEach
     void setUp() {
         residentRepository = new Residents();
         residentServices = new ResidentServicesImpl(residentRepository);
         request = new RegisterResidentRequest();
+        loginRequest = new ResidentLoginRequest();
     }
 
     @Test
@@ -30,6 +33,7 @@ class ResidentServicesImplTest {
         RegisterResidentResponse response = residentServices.register(request);
         assertNotNull(response);
         assertEquals("1", response.getId());
+        assertEquals("Registration Successful", response.getMessage());
     }
 
     @Test
@@ -51,8 +55,18 @@ class ResidentServicesImplTest {
     }
 
     @Test
+    public void registerNewResidentWithInvalidPhone__throwsException() {
+        request.setFullName("Adedeji Ibrahim");
+        request.setAddress("123 Main Street");
+        request.setPhone("0123456789");
+    }
+
+    @Test
     public void residentCabLoginAfterRegister__loginResidentTest() {
-
-
+        request.setFullName("Adedeji Ibrahim");
+        request.setAddress("123 Main Street");
+        request.setEmail("Ola123@fake.com");
+        request.setPhone("0908976787");
+        request.setHashedPassword("");
     }
 }

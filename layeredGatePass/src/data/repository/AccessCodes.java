@@ -19,8 +19,8 @@ public class AccessCodes implements AccessCodeRepository{
     }
 
     private void update(AccessCode accessCode) {
-        for(AccessCode access : accessCodes) {
-            if(access.getId().equals(accessCode.getId())) access.setId(accessCode.getId());
+        for (int count = 0; count < accessCodes.size(); count++) {
+            if (accessCodes.get(count).getId().equals(accessCode.getId())) accessCodes.set(count, accessCodes.get(count));
         }
     }
 

@@ -27,8 +27,8 @@ public class Residents implements ResidentRepository {
     }
 
     private void update(Resident resident) {
-        for(Resident houseOwner : residents) {
-            if (houseOwner.getId().equals(resident.getId())) resident.setId(houseOwner.getId());
+        for(int count = 0; count < residents.size(); count++) {
+            if (residents.get(count).getId().equals(resident.getId())) residents.set(count, residents.get(count));
         }
     }
 

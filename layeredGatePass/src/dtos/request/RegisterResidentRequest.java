@@ -7,6 +7,7 @@ public class RegisterResidentRequest {
     private String Address;
     private String phone;
     private String email;
+    private String hashedPassword;
 
     public String getId() {
         return id;
@@ -46,5 +47,13 @@ public class RegisterResidentRequest {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
+
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
     }
 }
