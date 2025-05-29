@@ -28,9 +28,7 @@ public class Residents implements ResidentRepository {
 
     private void update(Resident resident) {
         for(Resident houseOwner : residents) {
-            if(houseOwner.getId().equals(resident.getId())) {
-                residents.set(residents.indexOf(houseOwner), resident);
-            }
+            if (houseOwner.getId().equals(resident.getId())) resident.setId(houseOwner.getId());
         }
     }
 
@@ -39,10 +37,8 @@ public class Residents implements ResidentRepository {
     }
 
     @Override
-    public void deleteByid(String id) {
-        for (int count = 0; count < residents.size(); count++) {
-            if (residents.get(count).getId().equals(id)) residents.remove(residents.get(count));
-        }
+    public void deleteById(String id) {
+        residents.removeIf(resident -> resident.getId().equals(id));
     }
 
     @Override
@@ -58,9 +54,7 @@ public class Residents implements ResidentRepository {
     @Override
     public Optional<Resident> findById(String id) {
         for (Resident resident : residents) {
-            if(resident.getId().equals(id)) {
-                return Optional.of(resident);
-            }
+            if(resident.getId().equals(id)) return Optional.of(resident);
         } return  Optional.empty();
     }
 

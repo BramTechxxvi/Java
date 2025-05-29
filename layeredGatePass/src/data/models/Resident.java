@@ -7,6 +7,7 @@ public class Resident {
     private String Address;
     private String phone;
     private String email;
+    private String hashedPassword;
 
 
     public String getId() {
@@ -46,5 +47,9 @@ public class Resident {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
     }
 }

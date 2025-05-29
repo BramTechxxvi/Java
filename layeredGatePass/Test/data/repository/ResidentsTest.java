@@ -4,6 +4,8 @@ import data.models.Resident;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
     class ResidentsTest {
@@ -57,6 +59,7 @@ import static org.junit.jupiter.api.Assertions.*;
             Resident updateResident = new Resident();
             updateResident.setId(newResident.getId());
             updateResident.setFullName(newResident.getFullName());
+            resident.save(updateResident);
             assertEquals("1", updateResident.getId());
             assertEquals(1, resident.count());
             assertEquals("GreyJoy", updateResident.getFullName());
@@ -69,7 +72,7 @@ import static org.junit.jupiter.api.Assertions.*;
             resident.save(firstResident);
             resident.save(secondResident);
             assertEquals(2, resident.count());
-            resident.deleteByid("2");
+            resident.deleteById("2");
             assertEquals(1, resident.count());
         }
 
@@ -99,9 +102,9 @@ import static org.junit.jupiter.api.Assertions.*;
             Resident secondResident = new Resident();
             resident.save(firstResident);
             resident.save(secondResident);
-            resident.findAll();
-            assertTrue(resident.findAll().contains(firstResident));
-            assertTrue(resident.findAll().contains(secondResident));
+            List<Resident> allResident = resident.findAll();
+            assertTrue(allResident.contains(firstResident));
+            assertTrue(allResident.contains(secondResident));
         }
 
     }

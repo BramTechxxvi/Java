@@ -9,7 +9,7 @@ public interface ResidentRepository {
 
 
     Resident save(Resident resident);
-    void deleteByid(String id);
+    void deleteById(String id);
     void delete(Resident resident);
     void deleteAll();
     Optional<Resident> findById(String id);

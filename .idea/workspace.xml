@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="176e9f49-26aa-411b-be36-24357d841459" name="Changes" comment="new commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignmentTest/TicTacTest/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignmentTest/TicTacTest/TicTacToeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Estore/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Estore/Estore.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Problem/Untitled Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Things/Untitled Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaLogisticsApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/pizzaOrderAndLogistics/PizzaOrderApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layeredGatePass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thing.png" beforeDir="false" />
-    </list>
+    <list default="true" id="176e9f49-26aa-411b-be36-24357d841459" name="Changes" comment="new committ" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,23 +281,7 @@
       <workItem from="1747493048398" duration="1623000" />
       <workItem from="1747494849372" duration="949000" />
       <workItem from="1747569077757" duration="2208000" />
-      <workItem from="1747571365117" duration="510000" />
-    </task>
-    <task id="LOCAL-00013" summary="new commit">
-      <option name="closed" value="true" />
-      <created>1744128077148</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1744128077148</updated>
-    </task>
-    <task id="LOCAL-00014" summary="new commit">
-      <option name="closed" value="true" />
-      <created>1744133894587</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1744133894588</updated>
+      <workItem from="1747571365117" duration="2991000" />
     </task>
     <task id="LOCAL-00015" summary="new commit">
       <option name="closed" value="true" />
@@ -688,7 +659,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747489820435</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="new committ">
+      <option name="closed" value="true" />
+      <created>1747572731844</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1747572731844</updated>
+    </task>
+    <task id="LOCAL-00063" summary="new committ">
+      <option name="closed" value="true" />
+      <created>1747573865488</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1747573865488</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +711,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+    <MESSAGE value="new committ" />
+    <option name="LAST_COMMIT_MESSAGE" value="new committ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
