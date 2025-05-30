@@ -2,8 +2,9 @@ package utils;
 
 import data.models.Resident;
 import dtos.request.RegisterResidentRequest;
-import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
+
+import static utils.PasswordUtil.hashPassword;
 
 public class Mapper {
 
@@ -13,6 +14,7 @@ public class Mapper {
         resident.setEmail(request.getEmail());
         resident.setPhone(request.getPhone());
         resident.setAddress(request.getAddress());
+        resident.setHashedPassword(hashPassword(request.getHashedPassword()));
         return resident;
     }
 
@@ -22,4 +24,6 @@ public class Mapper {
         response.setMessage("Registration successful");
         return response;
     }
+
+
 }

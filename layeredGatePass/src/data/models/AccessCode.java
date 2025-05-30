@@ -9,6 +9,8 @@ public class AccessCode {
     private LocalDateTime timeCreated;
     private LocalDateTime timeUpdated;
     private LocalDateTime expiryTime;
+    private Resident resident;
+    private Visitor visitor;
 
 
     public String getId() {

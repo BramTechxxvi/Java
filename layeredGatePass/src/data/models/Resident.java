@@ -8,6 +8,8 @@ public class Resident {
     private String phone;
     private String email;
     private String hashedPassword;
+    private AccessCode accessCode;
+    private Visitor visitor;
 
 
     public String getId() {
@@ -47,6 +49,10 @@ public class Resident {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getHashedPassword() {
+        return hashedPassword;
     }
 
     public void setHashedPassword(String hashedPassword) {

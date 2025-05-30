@@ -5,8 +5,11 @@ import data.repository.Residents;
 import dtos.request.RegisterResidentRequest;
 import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
+import exceptions.InvalidEmailException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import utils.PasswordUtil;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ResidentServicesImplTest {
@@ -30,19 +33,23 @@ class ResidentServicesImplTest {
         request.setAddress("123 Main Street");
         request.setPhone("09012345678");
         request.setEmail("adedeji@fake.com");
+        request.setHashedPassword(PasswordUtil.hashPassword("12345"));
+        System.out.println(request.getHashedPassword());
         RegisterResidentResponse response = residentServices.register(request);
         assertNotNull(response);
         assertEquals("1", response.getId());
-        assertEquals("Registration Successful", response.getMessage());
+        assertEquals("Registration successful", response.getMessage());
     }
 
     @Test
     public void registerNewResidentWithInvalidEmail__throwsException() {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main Street");
-        request.setEmail("adedeji@f_ake.com");
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> residentServices.register(request));
-        assertEquals("Invalid email", exception.getMessage());
+        request.setEmail("adedeji@f_ake_.com");
+        request.setPhone("0908736672");
+        request.setHashedPassword("hashedPassword");
+        Exception exception = assertThrows(InvalidEmailException.class, () -> residentServices.register(request));
+        assertEquals("Invalid email format", exception.getMessage());
     }
 
     @Test
@@ -50,8 +57,10 @@ class ResidentServicesImplTest {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main street");
         request.setEmail(" ");
-        Exception error = assertThrows(IllegalArgumentException.class, () -> residentServices.register(request));
-        assertEquals("Invalid email", error.getMessage());
+        request.setPhone("0908736672");
+        request.setHashedPassword("hashedPassword");
+        Exception error = assertThrows(InvalidEmailException.class, () -> residentServices.register(request));
+        assertEquals("Invalid email format", error.getMessage());
     }
 
     @Test
