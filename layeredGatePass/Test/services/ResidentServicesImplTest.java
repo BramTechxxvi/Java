@@ -5,7 +5,9 @@ import data.repository.Residents;
 import dtos.request.RegisterResidentRequest;
 import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
+import dtos.response.ResidentLoginResponse;
 import exceptions.InvalidEmailException;
+import exceptions.InvalidPhoneNumberException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utils.PasswordUtil;
@@ -31,13 +33,13 @@ class ResidentServicesImplTest {
     public void registerNewResident__registerResidentTest() {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main Street");
-        request.setPhone("09012345678");
+        request.setPhone("0901 234-5678");
         request.setEmail("adedeji@fake.com");
         request.setHashedPassword(PasswordUtil.hashPassword("12345"));
-        System.out.println(request.getHashedPassword());
         RegisterResidentResponse response = residentServices.register(request);
         assertNotNull(response);
         assertEquals("1", response.getId());
+        assertEquals(1, residentRepository.count());
         assertEquals("Registration successful", response.getMessage());
     }
 
@@ -45,9 +47,9 @@ class ResidentServicesImplTest {
     public void registerNewResidentWithInvalidEmail__throwsException() {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main Street");
-        request.setEmail("adedeji@f_ake_.com");
-        request.setPhone("0908736672");
-        request.setHashedPassword("hashedPassword");
+        request.setEmail("adedeji@fake..c_om");
+        request.setPhone("0908 736 1672");
+        request.setHashedPassword(PasswordUtil.hashPassword("12345"));
         Exception exception = assertThrows(InvalidEmailException.class, () -> residentServices.register(request));
         assertEquals("Invalid email format", exception.getMessage());
     }
@@ -57,8 +59,8 @@ class ResidentServicesImplTest {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main street");
         request.setEmail(" ");
-        request.setPhone("0908736672");
-        request.setHashedPassword("hashedPassword");
+        request.setPhone("0908-736 1672");
+        request.setHashedPassword(PasswordUtil.hashPassword("12345"));
         Exception error = assertThrows(InvalidEmailException.class, () -> residentServices.register(request));
         assertEquals("Invalid email format", error.getMessage());
     }
@@ -68,14 +70,30 @@ class ResidentServicesImplTest {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main Street");
         request.setPhone("0123456789");
+        request.setEmail("123@fake.com");
+        request.setHashedPassword(PasswordUtil.hashPassword("12345"));
+        Exception error = assertThrows(InvalidPhoneNumberException.class, () -> residentServices.register(request));
+        assertEquals("Invalid phone number", error.getMessage());
     }
 
     @Test
-    public void residentCabLoginAfterRegister__loginResidentTest() {
+    public void registerNewResidentWithoutPhoneNumber__throwsException() {
         request.setFullName("Adedeji Ibrahim");
         request.setAddress("123 Main Street");
-        request.setEmail("Ola123@fake.com");
-        request.setPhone("0908976787");
-        request.setHashedPassword("");
+        request.setPhone(" ");
+        request.setEmail("123@fake.com");
+        request.setHashedPassword(PasswordUtil.hashPassword("12345"));
+        Exception error = assertThrows(InvalidPhoneNumberException.class, () -> residentServices.register(request));
+        assertEquals("Invalid phone number", error.getMessage());
+    }
+
+    @Test
+    public void residentCanLoginAfterRegister__loginResidentTest() {
+        registerNewResident__registerResidentTest();
+        loginRequest.setEmail("adedeji@fake.com");
+        loginRequest.setPassword("12345");
+        ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
+        assertNotNull(loginResponse);
+
     }
 }

@@ -3,8 +3,6 @@ package utils;
 
 import org.mindrot.jbcrypt.BCrypt;
 
-import static org.mindrot.jbcrypt.BCrypt.*;
-
 public class PasswordUtil {
 
 
@@ -12,7 +10,7 @@ public class PasswordUtil {
        return  BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
-    public boolean verifyPassword(String password, String hashedPassword) {
+    public static boolean verifyPassword(String password, String hashedPassword) {
         return BCrypt.checkpw(password, hashedPassword);
     }
 }

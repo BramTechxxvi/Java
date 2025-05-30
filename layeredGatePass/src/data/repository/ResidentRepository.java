@@ -13,6 +13,7 @@ public interface ResidentRepository {
     void delete(Resident resident);
     void deleteAll();
     Optional<Resident> findById(String id);
+    Optional<Resident> existByEmail(String email);
     List<Resident> findAllByFullName(String fullName);
     List<Resident> findAll();
     long count();

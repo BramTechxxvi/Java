@@ -5,9 +5,13 @@ import data.repository.ResidentRepository;
 import dtos.request.ResidentLoginRequest;
 import dtos.request.RegisterResidentRequest;
 import dtos.response.RegisterResidentResponse;
+import dtos.response.ResidentLoginResponse;
+import exceptions.InvalidCredentialsException;
 import exceptions.InvalidEmailException;
 import exceptions.InvalidPhoneNumberException;
+import exceptions.DetailsAlreadyInUseException;
 import utils.Mapper;
+import static utils.PasswordUtil.verifyPassword;
 
 
 public class ResidentServicesImpl implements ResidentServices {
@@ -21,6 +25,7 @@ public class ResidentServicesImpl implements ResidentServices {
     @Override
     public RegisterResidentResponse register(RegisterResidentRequest request) {
         verifyNewEmail(request.getEmail());
+        verifyNewPhone(request.getPhone());
         Resident resident = Mapper.map(request);
         Resident savedResident = residentRepository.save(resident);
 
@@ -28,33 +33,42 @@ public class ResidentServicesImpl implements ResidentServices {
     }
 
     @Override
-    public RegisterResidentResponse login(ResidentLoginRequest loginRequest) {
-        validateEmail(loginRequest.getEmail());
-        for (Resident resident : residentRepository.findAll()) {
+    public ResidentLoginResponse login(ResidentLoginRequest loginRequest) {
+    //    validateEmail(loginRequest.getEmail());
 
-        }return null;
+                ResidentLoginResponse loginResponse = new ResidentLoginResponse();
+             //   loginResponse.setId(resident.getId());
+           //     loginResponse.setFullName(resident.getFullName());
+           //     loginResponse.setEmail(resident.getEmail());
+          //      loginResponse.setMessage("Login successful");
+
+          //      return loginResponse
+          //  }
+
+         return loginResponse;
     };
 
 
     private void verifyNewEmail (String email){
         validateEmail(email);
         for (Resident resident : residentRepository.findAll()) {
-            if (email.equals(resident.getEmail())) throw new IllegalArgumentException("Email already exists");
-        }
-    }
+            if (email.equals(resident.getEmail())) throw new DetailsAlreadyInUseException("Email already exists");
+        }}
 
     private void validateEmail(String email){
-        if (email == null || email.isBlank() || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+        if (email == null || email.isBlank() || !email.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\\.[a-zA-Z]{2,}$")) {
             throw new InvalidEmailException("Invalid email format");
-        }
-    }
+        }}
 
     private void validatePhone(String phone) {
-        if (phone == null || phone.isBlank() || !phone.matches("[0-9]{3}-[0-9]{4}-[0-9]{4}")) {
+        if (phone == null || phone.isBlank() || !phone.matches("^0[7-9][0-1]\\d[- ]?\\d{3}[- ]?[0-9]{4}$")) {
             throw new InvalidPhoneNumberException("Invalid phone number");
-        }
-    }
+        }}
 
-    private void verifyNewPhone(String phone){}
+    private void verifyNewPhone(String phone){
+        validatePhone(phone);
+        for (Resident resident: residentRepository.findAll()) {
+            if(phone.equals(resident.getPhone()))  throw new DetailsAlreadyInUseException("Phone already exists");
+        }}
 
 }

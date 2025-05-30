@@ -54,8 +54,15 @@ public class Residents implements ResidentRepository {
     @Override
     public Optional<Resident> findById(String id) {
         for (Resident resident : residents) {
-            if(resident.getId().equals(id)) return Optional.of(resident);
+            if(id.equals(resident.getId())) return Optional.of(resident);
         } return  Optional.empty();
+    }
+
+    @Override
+    public Optional<Resident> existByEmail(String email) {
+        for (Resident resident : residents) {
+            if (email.equals(resident.getEmail())) return Optional.of(resident);
+        } return Optional.empty();
     }
 
     @Override

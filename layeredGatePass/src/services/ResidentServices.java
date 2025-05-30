@@ -3,10 +3,11 @@ package services;
 import dtos.request.ResidentLoginRequest;
 import dtos.request.RegisterResidentRequest;
 import dtos.response.RegisterResidentResponse;
+import dtos.response.ResidentLoginResponse;
 
 public interface ResidentServices {
 
     RegisterResidentResponse register(RegisterResidentRequest request);
 
-    RegisterResidentResponse login (ResidentLoginRequest loginRequest);
+    ResidentLoginResponse login (ResidentLoginRequest loginRequest);
 }
