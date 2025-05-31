@@ -90,8 +90,8 @@ class ResidentServicesImplTest {
     @Test
     public void residentCanLoginAfterRegister__loginResidentTest() {
         registerNewResident__registerResidentTest();
-        loginRequest.setEmail("adedeji@fake.com");
-        loginRequest.setPassword("12345");
+        loginRequest.setEmail(request.getEmail());
+        loginRequest.setPassword(request.getHashedPassword());
         ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
         assertNotNull(loginResponse);
 

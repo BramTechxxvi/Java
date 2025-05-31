@@ -1,11 +1,12 @@
 package utils;
 
 import data.models.Resident;
+import data.repository.Residents;
 import dtos.request.RegisterResidentRequest;
 import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
 import dtos.response.ResidentLoginResponse;
-
+import exceptions.InvalidCredentialsException;
 import static utils.PasswordUtil.hashPassword;
 import static utils.PasswordUtil.verifyPassword;
 
@@ -18,6 +19,7 @@ public class Mapper {
         resident.setPhone(request.getPhone());
         resident.setAddress(request.getAddress());
         resident.setHashedPassword(hashPassword(request.getHashedPassword()));
+
         return resident;
     }
 
@@ -25,13 +27,8 @@ public class Mapper {
         RegisterResidentResponse response = new RegisterResidentResponse();
         response.setId(resident.getId());
         response.setMessage("Registration successful");
+
         return response;
     }
 
-    //public static Resident map(ResidentLoginRequest loginRequest) {
-  //      for (Resident resident : residentRepository.findAll()) {
-  //          if (!loginRequest.getEmail().equals(resident.getEmail()) && verifyPassword(loginRequest.getPassword(), resident.getHashedPassword())) {
-    }
-
-
-//}
+}

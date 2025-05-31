@@ -11,8 +11,8 @@ import exceptions.InvalidEmailException;
 import exceptions.InvalidPhoneNumberException;
 import exceptions.DetailsAlreadyInUseException;
 import utils.Mapper;
-import static utils.PasswordUtil.verifyPassword;
 
+import static utils.PasswordUtil.verifyPassword;
 
 public class ResidentServicesImpl implements ResidentServices {
 
@@ -34,20 +34,20 @@ public class ResidentServicesImpl implements ResidentServices {
 
     @Override
     public ResidentLoginResponse login(ResidentLoginRequest loginRequest) {
-    //    validateEmail(loginRequest.getEmail());
+        validateEmail(loginRequest.getEmail());
+        Resident resident = residentRepository.existByEmail(loginRequest.getEmail())
+                .orElseThrow(()-> new InvalidCredentialsException("Invalid email or password"));
+        if(!verifyPassword(loginRequest.getPassword(), resident.getHashedPassword())) {
+            throw new InvalidCredentialsException("Invalid email or password");
+        }
+        ResidentLoginResponse loginResponse = new ResidentLoginResponse();
+            loginResponse.setId(resident.getId());
+            loginResponse.setFullName(resident.getFullName());
+            loginResponse.setEmail(resident.getEmail());
+            loginResponse.setMessage("Login successful");
 
-                ResidentLoginResponse loginResponse = new ResidentLoginResponse();
-             //   loginResponse.setId(resident.getId());
-           //     loginResponse.setFullName(resident.getFullName());
-           //     loginResponse.setEmail(resident.getEmail());
-          //      loginResponse.setMessage("Login successful");
-
-          //      return loginResponse
-          //  }
-
-         return loginResponse;
+            return loginResponse;
     };
-
 
     private void verifyNewEmail (String email){
         validateEmail(email);
