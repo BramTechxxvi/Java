@@ -47,7 +47,7 @@ public class ResidentServicesImpl implements ResidentServices {
             loginResponse.setMessage("Login successful");
 
             return loginResponse;
-    };
+    }
 
     private void verifyNewEmail (String email){
         validateEmail(email);

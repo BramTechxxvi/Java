@@ -94,6 +94,5 @@ class ResidentServicesImplTest {
         loginRequest.setPassword(request.getHashedPassword());
         ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
         assertNotNull(loginResponse);
-
     }
 }

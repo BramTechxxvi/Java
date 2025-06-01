@@ -1,14 +1,9 @@
 package utils;
 
 import data.models.Resident;
-import data.repository.Residents;
 import dtos.request.RegisterResidentRequest;
-import dtos.request.ResidentLoginRequest;
 import dtos.response.RegisterResidentResponse;
-import dtos.response.ResidentLoginResponse;
-import exceptions.InvalidCredentialsException;
 import static utils.PasswordUtil.hashPassword;
-import static utils.PasswordUtil.verifyPassword;
 
 public class Mapper {
 
