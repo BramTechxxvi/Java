@@ -28,7 +28,7 @@ public class Residents implements ResidentRepository {
 
     private void update(Resident resident) {
         for(int count = 0; count < residents.size(); count++) {
-            if (residents.get(count).getId().equals(resident.getId())) residents.set(count, residents.get(count));
+            if (residents.get(count).getId().equals(resident.getId())) residents.set(count, resident);
         }
     }
 
