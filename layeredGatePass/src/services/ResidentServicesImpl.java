@@ -1,15 +1,19 @@
 package services;
 
+import data.models.AccessCode;
 import data.models.Resident;
 import data.repository.ResidentRepository;
+import dtos.request.GenerateAccessCodeRequest;
 import dtos.request.ResidentLoginRequest;
 import dtos.request.RegisterResidentRequest;
+import dtos.response.GenerateAccessCodeResponse;
 import dtos.response.RegisterResidentResponse;
 import dtos.response.ResidentLoginResponse;
 import exceptions.InvalidCredentialsException;
 import exceptions.InvalidEmailException;
 import exceptions.InvalidPhoneNumberException;
 import exceptions.DetailsAlreadyInUseException;
+import utils.AccessCodeUtil;
 import utils.Mapper;
 
 import static utils.PasswordUtil.verifyPassword;
@@ -47,6 +51,16 @@ public class ResidentServicesImpl implements ResidentServices {
             loginResponse.setMessage("Login successful");
 
             return loginResponse;
+    }
+
+    @Override
+    public GenerateAccessCodeResponse generateAccessCode(GenerateAccessCodeRequest accessCodeRequest) {
+        AccessCode accessCode = new AccessCode();
+        accessCodeRequest.setAccessCode(AccessCodeUtil.generateToken().getCode());
+        GenerateAccessCodeResponse accessCodeResponse = new GenerateAccessCodeResponse();
+        accessCodeResponse.setAccessCode(accessCodeRequest.getAccessCode());
+
+        return accessCodeResponse;
     }
 
     private void verifyNewEmail (String email){

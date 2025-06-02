@@ -2,8 +2,10 @@ package services;
 
 import data.repository.ResidentRepository;
 import data.repository.Residents;
+import dtos.request.GenerateAccessCodeRequest;
 import dtos.request.RegisterResidentRequest;
 import dtos.request.ResidentLoginRequest;
+import dtos.response.GenerateAccessCodeResponse;
 import dtos.response.RegisterResidentResponse;
 import dtos.response.ResidentLoginResponse;
 import exceptions.InvalidEmailException;
@@ -94,5 +96,16 @@ class ResidentServicesImplTest {
         loginRequest.setPassword(request.getHashedPassword());
         ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
         assertNotNull(loginResponse);
+    }
+
+    @Test
+    public void generateAccessCodeForVisitor__geneRateAccessCodeTest() {
+        registerNewResident__registerResidentTest();
+        loginRequest.setEmail(request.getEmail());
+        loginRequest.setPassword(request.getHashedPassword());
+        ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
+        GenerateAccessCodeRequest accessCodeRequest = new GenerateAccessCodeRequest();
+        GenerateAccessCodeResponse accessCodeResponse = residentServices.generateAccessCode(accessCodeRequest);
+        System.out.println(accessCodeResponse.getAccessCode());
     }
 }
