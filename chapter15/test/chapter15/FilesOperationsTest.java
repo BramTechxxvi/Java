@@ -16,7 +16,7 @@ public class FilesOperationsTest {
 
     @Test
     void testCanWriteToFile() {
-        String fileLocatiom = "C:Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
+        String fileLocation = "C:Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
         String data = """
                 package files;
                 
@@ -26,8 +26,8 @@ public class FilesOperationsTest {
                     }
                 }
                 """;
-        FileOperations.writeDataTo(data, fileLocatiom);
-        String fileData = FileOperations.readFrom(fileLocatiom);
+        FileOperations.writeDataTo(data, fileLocation);
+        String fileData = FileOperations.readFrom(fileLocation);
         assertNotNull(fileData);
         assertFalse(fileData.isEmpty());
 

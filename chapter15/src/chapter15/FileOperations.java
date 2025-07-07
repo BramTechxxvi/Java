@@ -19,7 +19,9 @@ public class FileOperations {
         return data.toString();
     }
 
-    public static void writeDataTo(String data, String fileLocatiom) {
+    public static void writeDataTo(String data, String fileLocation) {
+        Path path = Path.of(fileLocation);
+        if(fileLocation.exists)
     }
 
 
