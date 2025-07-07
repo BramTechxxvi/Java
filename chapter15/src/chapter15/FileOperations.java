@@ -1,8 +1,6 @@
 package chapter15;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -32,5 +30,9 @@ public class FileOperations {
         }
     }
 
-
+    public static void writeDataTo2(String data, String fileLocation) throws IOException {
+        try(FileOutputStream output = new FileOutputStream(fileLocation)) {
+            output.write(data.getBytes());
+        }
+    }
 }

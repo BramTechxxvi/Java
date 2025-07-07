@@ -18,9 +18,10 @@ public class FilesOperationsTest {
 
     @Test
     void testCanWriteToFile() throws IOException {
-        String fileLocation = "C:Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
+        String fileLocation = "C:\\Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
         String data = """
                 package files;
+                import java.util.Arrays;
                 
                 public class Output {
                     public static void main(String[] args) {
@@ -32,9 +33,26 @@ public class FilesOperationsTest {
         String fileData = FileOperations.readFrom(fileLocation);
         assertNotNull(fileData);
         assertFalse(fileData.isEmpty());
-
     }
 
+    @Test
+    void testCanWriteToFile2() throws IOException {
+        String fileLocation = "C:\\Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Input.java";
+        String data = """
+                package files;
+                import java.util.Arrays;
+                
+                public class Output {
+                    public static void main(String[] args) {
+                    System.out.print(Arrays.toString(args))
+                    }
+                }
+                """;
+        FileOperations.writeDataTo2(data, fileLocation);
+        String fileData = FileOperations.readFrom(fileLocation);
+        assertNotNull(fileData);
+        assertFalse(fileData.isEmpty());
+    }
 
 
 
