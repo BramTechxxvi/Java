@@ -26,6 +26,10 @@ public class FilesOperationsTest {
                     }
                 }
                 """;
+        FileOperations.writeDataTo(data, fileLocatiom);
+        String fileData = FileOperations.readFrom(fileLocatiom);
+        assertNotNull(fileData);
+        assertFalse(fileData.isEmpty());
 
     }
 

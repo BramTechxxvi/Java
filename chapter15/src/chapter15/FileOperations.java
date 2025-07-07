@@ -19,6 +19,8 @@ public class FileOperations {
         return data.toString();
     }
 
-//    public static String
+    public static void writeDataTo(String data, String fileLocatiom) {
+    }
+
 
 }
