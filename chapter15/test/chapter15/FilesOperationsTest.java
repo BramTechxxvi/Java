@@ -8,10 +8,25 @@ public class FilesOperationsTest {
 
     @Test
     void testCanReadFromFile() {
-        String fileLocation = "";
+        String fileLocation = "C:\\Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\data.txt";
         String data = FileOperations.readFrom(fileLocation);
         assertNotNull(data);
         assertFalse(data.isEmpty());
+    }
+
+    @Test
+    void testCanWriteToFile() {
+        String fileLocatiom = "C:Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
+        String data = """
+                package files;
+                
+                public class Output {
+                    public static void main(String[] args) {
+                    System.out.print(Arrays.toString(args))
+                    }
+                }
+                """;
+
     }
 
 
