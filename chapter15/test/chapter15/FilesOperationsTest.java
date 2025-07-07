@@ -2,6 +2,8 @@ package chapter15;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FilesOperationsTest {
@@ -15,7 +17,7 @@ public class FilesOperationsTest {
     }
 
     @Test
-    void testCanWriteToFile() {
+    void testCanWriteToFile() throws IOException {
         String fileLocation = "C:Users\\Dell\\Desktop\\Mr Chibuzor\\chapter15\\test\\files\\Output.java";
         String data = """
                 package files;

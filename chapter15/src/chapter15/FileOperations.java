@@ -1,9 +1,9 @@
 package chapter15;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 
 public class FileOperations {
@@ -24,6 +24,11 @@ public class FileOperations {
         Path path = Path.of(fileLocation);
         if(!Files.exists(path)) {
             Files.createFile(path);
+        }
+        try(BufferedWriter writer = Files.newBufferedWriter(path)) {
+            writer.write(data);
+        } catch(IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
