@@ -3,6 +3,7 @@ package chapter15;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 
 public class FileOperations {
@@ -19,9 +20,11 @@ public class FileOperations {
         return data.toString();
     }
 
-    public static void writeDataTo(String data, String fileLocation) {
+    public static void writeDataTo(String data, String fileLocation) throws IOException {
         Path path = Path.of(fileLocation);
-        if(fileLocation.exists)
+        if(!Files.exists(path)) {
+            Files.createFile(path);
+        }
     }
 
 
