@@ -5,6 +5,8 @@ import java.util.List;
 
 public class TransactionJsonSerializer {
 
+    private final static ObjectMapper mapper = new ObjectMapper();
+
     public static String serialize(Transaction transaction) {
         try {
             String json = mapper.writeValueAsString(transaction);
@@ -15,9 +17,11 @@ public class TransactionJsonSerializer {
         } return " ";
     }
 
-    public static String serializeTransactions(List<Transaction> transactionList) {
+    public static String serializeTransactions(List<Transaction> transactions) {
         try {
-            return
+            return mapper.writeValueAsString(transactions);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
         }
     }
 }

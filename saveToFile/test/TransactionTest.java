@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.time.LocalDate.now;
@@ -21,8 +22,31 @@ class TransactionTest {
         String expected = "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00}";
         assertNotNull(json);
         assertEquals(expected, json);
-
     }
+
+    @Test
+    public void testShouldSerializeTransactions() {
+        Transaction hawaliesTransaction = new Transaction();
+        hawaliesTransaction.setSender("Hawanat");
+        hawaliesTransaction.setRecipient("Bode");
+        hawaliesTransaction.setDate(now());
+        hawaliesTransaction.setAmount(new BigDecimal("100000.00"));
+
+        Transaction bramTransaction = new Transaction();
+        bramTransaction.setSender("Bram");
+        bramTransaction.setRecipient("Ibrahim");
+        bramTransaction.setDate(now());
+        bramTransaction.setAmount(new BigDecimal("1000.00"));
+
+        List<Transaction> transactions = List.of(hawaliesTransaction, bramTransaction);
+        String json = TransactionJsonSerializer.serializeTransactions(transactions);
+        String expected = "[{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00},{\"sender\":\"Bram\",\"recipient\":\"Ibrahim\",\"date\":\"2025-7-14\",\"amount\":1000.00}]";
+        assertNotNull(json);
+        assertEquals(expected, json);
+    }
+
+    @Test
+    public void testShouldDeserializeTransaction() {}
 
     @Test
     public void testSaveToFile() throws IOException {
