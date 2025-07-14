@@ -12,11 +12,12 @@ import java.util.List;
 
 public class Transaction {
 
-    private BigDecimal amount;
+    private String sender;
+    private String recipient;
     @JsonSerialize(using = TransactionDateSerializer.class)
     private LocalDate date;
-    private String recipient;
-    private String sender;
+    private BigDecimal amount;
+
 
 
     public BigDecimal getAmount() {
