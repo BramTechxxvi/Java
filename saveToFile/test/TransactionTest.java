@@ -46,7 +46,9 @@ class TransactionTest {
     }
 
     @Test
-    public void testShouldDeserializeTransaction() {}
+    public void testShouldDeserializeTransaction() {
+        String json =  "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00}"
+    }
 
     @Test
     public void testSaveToFile() throws IOException {

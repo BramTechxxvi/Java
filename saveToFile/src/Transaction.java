@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.io.BufferedReader;
@@ -15,6 +16,7 @@ public class Transaction {
     private String sender;
     private String recipient;
     @JsonSerialize(using = TransactionDateSerializer.class)
+    @JsonDeserialize(using = TransactionDateDeserializer.class)
     private LocalDate date;
     private BigDecimal amount;
 
