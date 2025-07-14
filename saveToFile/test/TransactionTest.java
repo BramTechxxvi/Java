@@ -47,7 +47,14 @@ class TransactionTest {
 
     @Test
     public void testShouldDeserializeTransaction() {
-        String json =  "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00}"
+        String json =  "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00}";
+        Transaction transaction = TransactionJsonSerializer.deserialize(json);
+        assertNotNull(transaction);
+        assertEquals("Hawanat", transaction.getSender());
+        assertEquals("Bode", transaction.getRecipient());
+        assertEquals("2025-7-14", transaction.getDate());
+        assertEquals(new BigDecimal("100000.00"), transaction.getAmount());
+
     }
 
     @Test

@@ -24,4 +24,12 @@ public class TransactionJsonSerializer {
             throw new RuntimeException(e);
         }
     }
+
+    public static Transaction deserialize(String json) {
+        try {
+            return mapper.readValue(json, Transaction.class);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
