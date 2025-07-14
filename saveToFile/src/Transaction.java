@@ -9,43 +9,74 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Transaction {
+
     private BigDecimal amount;
     private LocalDateTime date;
     private String recipient;
     private String sender;
 
-    String folderPath = "C:\\Users\\Dell\\Desktop\\Mr Chibuzor\\saveToFile\\src";
-
     public Transaction(BigDecimal amount, String recipient, String sender) {
         this.amount = amount;
         this.recipient = recipient;
         this.sender = sender;
-        date = LocalDateTime.now();
+        this.date = LocalDateTime.now();
+    }
+
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public String getRecipient() {
+        return recipient;
+    }
+
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
     }
 
     public void saveTransactions(String fileLocation, List<Transaction> transactions) throws IOException {
-        fileLocation = folderPath + "transactions.txt";
         if (transactions == null || transactions.isEmpty()) transactions = new ArrayList<>();
         Path path = Path.of(fileLocation);
-        if (Files.exists(path)) Files.createFile(path);
+        if (!Files.exists(path)) Files.createFile(path);
 
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (Transaction transaction : transactions) {
-                writer.write(transaction.toString()+" ");
+                String transactionDetails = String.format("Sender: %s, Receiver: %s, Amount: %s, Date: %s, ", transaction.sender, transaction.recipient, transaction.amount.toString(), transaction.date.toString());
+                writer.write(transactionDetails);
             }
         }
     }
 
-    public String readFromFile(String fileLocation) throws IOException {
-        fileLocation = folderPath + "transactions.txt";
+    public static String readFromFile(String fileLocation) {
         Path path = Path.of(fileLocation);
-        String data = "";
+        StringBuilder text = new StringBuilder();
         try (BufferedReader reader = Files.newBufferedReader(path)) {
-            data+=reader.readLine();
+            while(reader.ready()) text.append(reader.readLine());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return data;
+        System.out.println(text);
+        return text.toString();
     }
-
 }
