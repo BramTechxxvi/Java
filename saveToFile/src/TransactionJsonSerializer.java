@@ -11,6 +11,6 @@ public class TransactionJsonSerializer {
             return json;
         } catch (JsonProcessingException e) {
             e.printStackTrace();
-        } return null;
+        } return " ";
     }
 }

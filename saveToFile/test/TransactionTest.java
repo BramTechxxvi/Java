@@ -18,7 +18,7 @@ class TransactionTest {
         transaction.setDate(now());
         transaction.setAmount(new BigDecimal("100000.00"));
         String json = TransactionJsonSerializer.serialize(transaction);
-        String expected = "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-07-14\"\"amount\":100000.00}";
+        String expected = "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-7-14\",\"amount\":100000.00}";
         assertNotNull(json);
         assertEquals(expected, json);
 
