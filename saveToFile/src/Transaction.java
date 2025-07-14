@@ -15,13 +15,6 @@ public class Transaction {
     private String recipient;
     private String sender;
 
-    public Transaction(BigDecimal amount, String recipient, String sender) {
-        this.amount = amount;
-        this.recipient = recipient;
-        this.sender = sender;
-        this.date = LocalDateTime.now();
-    }
-
 
     public BigDecimal getAmount() {
         return amount;
