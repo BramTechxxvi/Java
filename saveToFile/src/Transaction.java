@@ -1,4 +1,3 @@
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.io.BufferedReader;
@@ -7,7 +6,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class Transaction {
 
     private BigDecimal amount;
     @JsonSerialize(using = TransactionDateSerializer.class)
-    private LocalDateTime date;
+    private LocalDate date;
     private String recipient;
     private String sender;
 
@@ -28,11 +27,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

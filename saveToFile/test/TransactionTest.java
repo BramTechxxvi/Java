@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
-import static java.time.LocalDateTime.now;
+import static java.time.LocalDate.now;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TransactionTest {
@@ -16,7 +16,11 @@ class TransactionTest {
         transaction.setSender("Hawanat");
         transaction.setRecipient("Bode");
         transaction.setDate(now());
-        transaction.setAmount(new BigDecimal("100.00"));
+        transaction.setAmount(new BigDecimal("100_000.00"));
+        String json = TransactionJsonSerializer.serialize(transaction);
+        String expected = "{\"sender\":\"Hawanat\",\"recipient\":\"Bode\",\"date\":\"2025-07-14\"\"amount\":100_000.00}";
+        assertNotNull(json);
+        assertEquals(expected, json);
 
     }
 
