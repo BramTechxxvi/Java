@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -11,6 +13,7 @@ import java.util.List;
 public class Transaction {
 
     private BigDecimal amount;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, )
     private LocalDateTime date;
     private String recipient;
     private String sender;

@@ -12,15 +12,21 @@ class TransactionTest {
 
     @Test
     public void testShouldSerializeTransaction() {
-        Tranasction tranasction = new Transaction();
+        Transaction transaction = new Transaction();
+        transaction.setAmount(new BigDecimal("100.00"));
+        transaction.setSender("Hawanat");
+        transaction.setRecipient("Bode");
+        transaction.setDate(now());
     }
 
     @Test
     public void testSaveToFile() throws IOException {
         String fileLocation = "C:\\Users\\Dell\\Desktop\\Mr Chibuzor\\saveToFile\\src\\transactions.txt";
-        Transaction transaction = new Transaction(BigDecimal.valueOf(300),"suliyat", "ibra");
+        Transaction transaction = new Transaction();
         transaction.setAmount(new BigDecimal("300"));
         transaction.setDate(now());
+        transaction.setSender("Suliha");
+        transaction.setRecipient("Bram");
         List<Transaction> transactions = List.of(transaction);
         transaction.saveTransactions(fileLocation,transactions);
         String dataInFile = Transaction.readFromFile(fileLocation);
