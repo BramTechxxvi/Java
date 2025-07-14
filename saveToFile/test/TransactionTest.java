@@ -13,10 +13,11 @@ class TransactionTest {
     @Test
     public void testShouldSerializeTransaction() {
         Transaction transaction = new Transaction();
-        transaction.setAmount(new BigDecimal("100.00"));
         transaction.setSender("Hawanat");
         transaction.setRecipient("Bode");
         transaction.setDate(now());
+        transaction.setAmount(new BigDecimal("100.00"));
+
     }
 
     @Test

@@ -1,4 +1,5 @@
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,7 +14,7 @@ import java.util.List;
 public class Transaction {
 
     private BigDecimal amount;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, )
+    @JsonSerialize(using = TransactionDateSerializer.class)
     private LocalDateTime date;
     private String recipient;
     private String sender;
