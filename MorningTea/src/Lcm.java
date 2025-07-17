@@ -2,10 +2,11 @@ public class Lcm {
 
     public int greatestCommonDivisor(int... numbers) {
         if(numbers.length == 0) throw new IllegalArgumentException("You must provide at least one number");
+        int result = numbers[0];
         for (int count = 0; count < numbers.length; count++) {
-            result = gcd(result, numbers[i])
+            result = gcd(result, numbers[count]);
         }
-        return 0;
+        return result;
     }
 
     public int gcd(int firstNumber, int secondNumber) {
