@@ -5,18 +5,14 @@ public class Main {
 
 //        Car car = new Car();
 //        car.move(10);
-//        Movable movable = new Car();
-//        movable.move(100);
 
 //        Movable movableCar = (distance) -> {
 //            System.out.println("Car moved: " + distance);
-//        };
-//        movableCar.move(10);
+//        }; movableCar.move(10);
 //
 //        Movable movableBicycle = (distance) -> {
 //            System.out.println("Bicycle moved: " + distance);
-//        };
-//        movableBicycle.move(10);
+//        }; movableBicycle.move(10);
 
         PasswordEncoder checker = (password, reversed) -> {
             return password.equals(reversePass(reversed));
