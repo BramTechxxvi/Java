@@ -1,4 +1,4 @@
 public interface PasswordEncoder {
 
-    void isReversePassword(String password, String reversedPassword);
+    boolean isReversePassword(String password, String reversedPassword);
 }
