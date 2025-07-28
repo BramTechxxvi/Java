@@ -25,7 +25,5 @@ public class Main {
         System.out.println();
         Operations.subtract(5, 2);
         System.out.println();
-
-
     }
 }

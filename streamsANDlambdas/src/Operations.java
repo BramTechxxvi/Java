@@ -20,5 +20,4 @@ public class Operations {
         IntStream.rangeClosed(1, number)
                 .forEach(num -> System.out.print(num / multiplier + " "));
     }
-
 }
