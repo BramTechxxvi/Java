@@ -17,16 +17,7 @@ public class Operations {
 
     public static void multiply(int number, int multiplier) {
         IntStream.rangeClosed(1, number)
-                .forEach(num ->   System.out.print(num / multiplier + " "));
+                .forEach(num -> System.out.print(num / multiplier + " "));
     }
-
-    public static int evenNumbers() {
-        return 0;
-    }
-
-    public static int oddNumbers() {
-        return 0;
-    }
-
 
 }
