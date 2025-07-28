@@ -1,26 +1,30 @@
+import java.util.stream.IntStream;
+
 public class Operations {
 
-    public static addNumbers() {
+    public static int addNumbers() {
+        return 0;
 
     }
-    public static subtract() {
-
+    public static int subtract() {
+        return 0;
     }
 
-    public static divide() {
-
+    public static void divide(int number, int divisor) {
+        IntStream.rangeClosed(1, number)
+                .forEach(num ->   System.out.print(num / divisor + " "));
     }
 
-    public static multiply() {
-
+    public static int multiply() {
+        return 0;
     }
 
-    public static evenNumbers() {
-
+    public static int evenNumbers() {
+        return 0;
     }
 
-    public static oddNumbers() {
-
+    public static int oddNumbers() {
+        return 0;
     }
 
 

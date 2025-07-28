@@ -13,7 +13,9 @@ public class Main {
         words.forEach(word -> System.out.print(word + " "));
 
         System.out.println(FactorialMethods.calculateFactorial(5));
-        System.out.println(FactorialMethods.calculateFactorial2(6));
+        System.out.println(FactorialMethods.calculateFactorial2(6) +" \n");
+
+        Operations.divide(20, 2);
 
 
     }
