@@ -16,6 +16,7 @@ public class Main {
         System.out.println(FactorialMethods.calculateFactorial2(6) +" \n");
 
         Operations.divide(20, 2);
+        Operations.multiply(5, 2);
 
 
     }

@@ -12,11 +12,12 @@ public class Operations {
 
     public static void divide(int number, int divisor) {
         IntStream.rangeClosed(1, number)
-                .forEach(num ->   System.out.print(num / divisor + " "));
+                .forEach(num ->   System.out.println(num / divisor + " "));
     }
 
-    public static int multiply() {
-        return 0;
+    public static void multiply(int number, int multiplier) {
+        IntStream.rangeClosed(1, number)
+                .forEach(num ->   System.out.println(num / multiplier + " "));
     }
 
     public static int evenNumbers() {
