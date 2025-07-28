@@ -1,4 +1,4 @@
 public interface Movable {
 
-    void move();
+    void move(int distance);
 }
