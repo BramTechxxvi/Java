@@ -14,9 +14,17 @@ public class Main {
 
         System.out.println(FactorialMethods.calculateFactorial(5));
         System.out.println(FactorialMethods.calculateFactorial2(6) +" \n");
+        System.out.println();
+
 
         Operations.divide(20, 2);
+        System.out.println();
         Operations.multiply(5, 2);
+        System.out.println();
+        Operations.add(6, 2);
+        System.out.println();
+        Operations.subtract(5, 2);
+        System.out.println();
 
 
     }
