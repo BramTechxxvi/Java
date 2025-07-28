@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d4ebb0-e7c9-4155-b17a-ebaa98056303" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../assignmentTest/TicTacTest/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../assignmentTest/TicTacTest/TicTacToeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Estore.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem/Untitled Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Things/Untitled Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pizzaOrderAndLogistics/PizzaLogisticsApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pizzaOrderAndLogistics/PizzaOrderApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../layeredGatePass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateOne/BankeBank/BankePOSMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateOne/BankeBank/BankePOSMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../layeredGatePass/Test/data/repository/AccessCodesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../layeredGatePass/Test/data/repository/AccessCodesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../layeredGatePass/Test/services/ResidentServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../layeredGatePass/Test/services/ResidentServicesImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../layeredGatePass/src/data/models/AccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../layeredGatePass/src/data/models/AccessCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../layeredGatePass/src/data/repository/AccessCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../layeredGatePass/src/data/repository/AccessCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../layeredGatePass/src/dtos/request/GenerateAccessCodeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../layeredGatePass/src/dtos/request/GenerateAccessCodeRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +41,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Mr Chibuzor/assignments/Estore&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/JavaProjects-PhaseGate/NotesManagementSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Estore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Estore" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +92,10 @@
       <workItem from="1747494836118" duration="8000" />
       <workItem from="1747571280375" duration="40000" />
       <workItem from="1747571345060" duration="183000" />
+      <workItem from="1749818176247" duration="47000" />
+      <workItem from="1750130149482" duration="688000" />
+      <workItem from="1750149741960" duration="1498000" />
+      <workItem from="1750156392660" duration="624000" />
     </task>
     <servers />
   </component>

@@ -68,4 +68,9 @@ public class AccessCodes implements AccessCodeRepository{
     public long count() {
         return accessCodes.size();
     }
+
+    @Override
+    public String toString() {
+        return "AccessCode=" + "expiryTime: ";
+    }
 }

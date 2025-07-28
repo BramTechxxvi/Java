@@ -1,12 +1,11 @@
 package assignments.gateOne.BankeBank;
 import java.util.Scanner;
 public class BankePOSMain {
-    private final BankApp bankApp = new BankApp();
 
     public static void main(String[] args) {
 
         print("<<<<<< Welcome to the BankeAtm App >>>>>>");
-        int option;
+        int option = 0;
         int bankServices;
         while (true) {
             print(getMenu());
@@ -15,7 +14,6 @@ public class BankePOSMain {
                 if (option < 1 || option > 3) throw new Exception("Invalid option...Try again");
             } catch (Exception e) {
                 print("Invalid option");
-                continue;
             }
             switch (option) {
                 case 1:

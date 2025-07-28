@@ -6,7 +6,7 @@ public class AccessCode {
 
     private String id;
     private String code;
-    private LocalDateTime timeCreated = LocalDateTime.now();
+    private final LocalDateTime timeCreated = LocalDateTime.now();
     private LocalDateTime expiryTime = timeCreated.plusHours(5);
     private Resident resident;
     private Visitor visitor;
@@ -28,13 +28,6 @@ public class AccessCode {
         this.code = code;
     }
 
-    public LocalDateTime getTimeCreated() {
-        return timeCreated;
-    }
-
-    public void setTimeCreated(LocalDateTime timeCreated) {
-        this.timeCreated = timeCreated;
-    }
 
     public LocalDateTime getExpiryTime() {
         return expiryTime;

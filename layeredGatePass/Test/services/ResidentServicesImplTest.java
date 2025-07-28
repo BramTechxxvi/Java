@@ -105,6 +105,7 @@ class ResidentServicesImplTest {
         loginRequest.setPassword(request.getHashedPassword());
         ResidentLoginResponse loginResponse = residentServices.login(loginRequest);
         GenerateAccessCodeRequest accessCodeRequest = new GenerateAccessCodeRequest();
+        System.out.print("Resqesting===" + accessCodeRequest.getExpiryTime());
         GenerateAccessCodeResponse accessCodeResponse = residentServices.generateAccessCode(accessCodeRequest);
         System.out.println(accessCodeResponse.getAccessCode());
     }

@@ -26,6 +26,7 @@ class AccessCodesTest {
     public void saveNewAccessCode__countIsOneTest() {
         AccessCode newAccessCode = new AccessCode();
         accessCodes.save(newAccessCode);
+        System.out.print("Requesting====" + newAccessCode.getExpiryTime());
         assertEquals(1, accessCodes.count());
     }
 
