@@ -16,11 +16,11 @@ public class Main {
         };
 
         String actualPassword = "lola";
-        String Password = "lola";
+        String reversed = "lola";
 
-        System.out.println(isReverseMatch.isReversePassword(actualPassword, testPassword));
-        System.out.println(hasSameLength.isReversePassword(actualPassword, testPassword));
-        System.out.println(isExactMatch.isReversePassword(actualPassword, testPassword));
+        System.out.println(isReverseMatch.isReversePassword(actualPassword, reversed));
+        System.out.println(hasSameLength.isReversePassword(actualPassword, reversed));
+        System.out.println(isExactMatch.isReversePassword(actualPassword, reversed));
 
     }
 
