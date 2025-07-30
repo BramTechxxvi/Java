@@ -1,4 +1,6 @@
-public class Car implements Movable{
+import taskOne.Movable;
+
+public class Car implements Movable {
 
     @Override
     public void move(int distance) {
