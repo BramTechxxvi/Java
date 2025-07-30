@@ -20,6 +20,9 @@ public class Transaction {
 
     public String getSender() { return sender; }
 
+    public void setSender(String sender) { this.sender = sender; }
+
+
 
 //
 //        public void setSender(String sender) {
