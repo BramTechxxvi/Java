@@ -21,12 +21,8 @@ public class User {
         this.password = password;
     }
 
-
     @Override
     public String toString() {
-        return "User"
+        return "User { username: \"" + username + "\", password: \"" + password + "\", isValid: " + isValid + "}";
     }
-
-//    "User { username: \"" + username + "\", password: \"" + password + "\", isValid: " + isValid + " }"
-
 }
