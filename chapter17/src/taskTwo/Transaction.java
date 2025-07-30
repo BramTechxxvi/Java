@@ -13,7 +13,7 @@ import java.util.List;
 public class Transaction {
 
     private String sender;
-    private String receiver;
+    private String recipient;
     private BigDecimal amount;
     private LocalDate date;
 
@@ -22,38 +22,9 @@ public class Transaction {
 
     public void setSender(String sender) { this.sender = sender; }
 
-    public String getReceiver() { return receiver; }
+    public String getRecipient() { return recipient; }
 
-    public void setReceiver(String receiver) { this.receiver = receiver; }
-
-//
-//        public void setSender(String sender) {
-//            this.sender = sender;
-//        }
-
-        public String getRecipient() {
-            return recipient;
-        }
-
-        public void setRecipient(String recipient) {
-            this.recipient = recipient;
-        }
-
-        public LocalDate getDate() {
-            return date;
-        }
-
-        public void setDate(LocalDate date) {
-            this.date = date;
-        }
-
-        public BigDecimal getAmount() {
-            return amount;
-        }
-
-        public void setAmount(BigDecimal amount) {
-            this.amount = amount;
-        }
+    public void setRecipient(String recipient) { this.recipient = recipient; }
 
         public void saveTransactions(String fileLocation, List<Transaction> transactions) throws IOException {
             if (transactions == null || transactions.isEmpty()) transactions = new ArrayList<>();
