@@ -14,7 +14,7 @@ public class FunctionImpl {
 
         boolean result = booleanFunction.apply("Hello");
         System.out.println(result);
-        boolean result2 = booleanFunction.apply("Hello123");
+        boolean result2 = booleanFunction.apply("123");
         System.out.println(result2);
     }
 }
