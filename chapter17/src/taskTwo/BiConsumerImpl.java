@@ -13,6 +13,7 @@ public class BiConsumerImpl {
         map.put(2,3);
         map.put(30,4);
         map.put(40,5);
+        map.put(50,6);
 
         map.forEach(biConsumer);
     }
