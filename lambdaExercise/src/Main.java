@@ -10,7 +10,6 @@ public class Main {
         userList.add(firstUser);
         userList.add(secondUser);
 
-
         UserDetailsService details = (username, password)-> {
 //            boolean isValidUsername = userList.stream().anyMatch(user -> user
 //                    .getUsername().equals(username));
@@ -23,6 +22,6 @@ public class Main {
                     .orElse(new User(" ", " ", false));
         };
 
-
+        System.out.println(details.getUserDetails("Grace", "password"));
     }
 }
