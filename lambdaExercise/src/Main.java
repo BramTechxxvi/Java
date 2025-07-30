@@ -19,7 +19,7 @@ public class Main {
                     .filter(user -> user.getUsername().equals(username) && firstUser.getPassword().equals(password))
                     .findFirst()
                     .map(user -> new User(user.getUsername(), user.getPassword(), true))
-                    .orElse(new User(" ", " ", false));
+                    .orElse(new User("null", "null", false));
         };
 
         System.out.println(details.getUserDetails("Grace", "password"));
