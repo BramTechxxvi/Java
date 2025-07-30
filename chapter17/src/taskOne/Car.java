@@ -1,4 +1,4 @@
-import taskOne.Movable;
+package taskOne;
 
 public class Car implements Movable {
 
