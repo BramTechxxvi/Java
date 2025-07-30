@@ -48,19 +48,14 @@ public class Transaction {
         }
     }
 
-    pu
-
-        public static String readFromFile(String fileLocation) {
-//            Path path = Path.of(fileLocation);
-//            StringBuilder text = new StringBuilder();
-//            try (BufferedReader reader = Files.newBufferedReader(path)) {
-//                while(reader.ready()) text.append(reader.readLine());
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            System.out.println(text);
-//            return text.toString();
-//        }
+    public static String readFromFile(String fileLocation) {
+        Path path = Path.of(fileLocation);
+        StringBuilder text = new StringBuilder();
+        try (BufferedReader reader = Files.newBufferedReader(path)) {
+            while(reader.ready()) text.append(reader.readLine());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return text.toString();
     }
-
 }
