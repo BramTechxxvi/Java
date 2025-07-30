@@ -2,7 +2,7 @@ public class User {
 
     private String username;
     private String password;
-    private boolean isValid
+    private boolean isValid;
 
     public User(String username, String password, boolean isValid) {
         this.username = username;
