@@ -23,5 +23,6 @@ public class Main {
         };
 
         System.out.println(details.getUserDetails("Grace", "password"));
+        System.out.println(details.getUserDetails("John", "Doe"));
     }
 }
