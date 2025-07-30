@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello, World!");
+        User firstUser = new User("John", "Doe");
+        User secondUser = new User("Jane", "Doe");
+
+
+        UserDetailsService details = ("Jane", "Doe")=> {
+
+        };
+
     }
 }

@@ -1,4 +1,4 @@
 public interface UserDetailsService {
 
-    void getUserDetails(String username, String password);
+    User getUserDetails(String username, String password);
 }
