@@ -26,6 +26,10 @@ public class Transaction {
 
     public void setRecipient(String recipient) { this.recipient = recipient; }
 
+    public BigDecimal getAmount() { return amount; }
+
+    public void setAmount(BigDecimal amount) { this.amount = amount; }
+
         public void saveTransactions(String fileLocation, List<Transaction> transactions) throws IOException {
             if (transactions == null || transactions.isEmpty()) transactions = new ArrayList<>();
             Path path = Path.of(fileLocation);
