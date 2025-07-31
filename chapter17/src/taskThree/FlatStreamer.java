@@ -11,9 +11,11 @@ public class FlatStreamer {
         Set<String> words = new HashSet<>();
         words.add("We");
         words.add("Are");
-        words.add("African")
+        words.add("African");
         words.add("Strong");
         words.add("Black");
+//        words.stream().flatMapToInt((String word)-> word.chars())
+//        the bothe are same....
         words.stream().flatMap((String word)-> word.chars().boxed())
                 .forEach(System.out::println);
         System.out.println("\n\n");
