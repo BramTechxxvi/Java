@@ -1,13 +1,20 @@
 package Section13;
 
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TaskOneTest {
 
     @Test
-
-    public void testCanReadFromFileWithStream() {
-        String testFile = "testFile";
+    public void testCanReadFromFileWithStream() throws IOException {
+        Path tempFile = Files.createTempFile("testFile", ".txt");
+        String content = "Hello, World!" + "\n" + "Lets do something great today";
+        Files.write(tempFile, content.getBytes());
     }
 
 }
