@@ -6,11 +6,10 @@ import java.util.stream.IntStream;
 public class Exercise13 {
 
     public static void main(String[] args) {
-        List<Integer> randomNumbers = IntStream.range(0, 10)
+        List<Integer> randomNumbers = IntStream.rangeClosed(1, 10)
                 .map(num -> new Random().nextInt(1000+1))
                 .boxed()
                 .collect(Collectors.toList());
-
         System.out.println(randomNumbers);
 
         long evenCount = randomNumbers.stream().filter(num-> num % 2 ==0).count();
