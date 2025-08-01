@@ -9,17 +9,12 @@ import java.util.stream.Stream;
 public class TaskOne {
 
     public String readFile(String fileLocation) {
-
         Path path = Path.of(fileLocation);
         try(Stream<String> lines = Files.lines(path)) {
-            return lines.filter(line -> !line.isEmpty())
-                    .collect(Collectors.joining("\n"));
+            return lines.collect(Collectors.joining("\n"));
         } catch (IOException e) {
             System.out.println("Error reading file " + fileLocation);
         }
         return "";
     }
 }
-
-
-

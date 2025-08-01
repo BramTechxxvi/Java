@@ -4,6 +4,7 @@ public class Main {
         System.out.println("Hello, World!");
 
 //        Section 17.13 Creating a Stream<String> from a File
+//        • Files method lines creates a Stream<String> for reading the lines of text from a file.
 //        • Stream method flatMap receives a Function that maps an object into a stream—e.g., a line of
 //        text into words.
 //    • Pattern method splitAsStream uses a regular expression to tokenize a String.
