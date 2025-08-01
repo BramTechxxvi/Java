@@ -1,7 +1,6 @@
 package Section13;
 
 import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,7 +15,8 @@ class TaskOneTest {
         String expectedContent = "Hello, World!" + "\n" + "Lets do something great today";
         Files.write(tempFile, expectedContent.getBytes());
 
-        String data = FileReaderStream.readFile(tempFile.toString());
+        TaskOne streamReader = new TaskOne();
+        String data = streamReader.readFile(tempFile.toString());
         assertEquals(expectedContent, data);
         Files.deleteIfExists(tempFile);
     }
