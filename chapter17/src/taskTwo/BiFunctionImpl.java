@@ -1,6 +1,6 @@
 package taskTwo;
 
-public class BiFunction {
+public class BiFunctionImpl {
 
     public static void main(String[] args) {
 
