@@ -9,6 +9,12 @@ public class Transaction {
 
     public LocalDate getDate() { return date; }
 
+    public void setDate(LocalDate date) { this.date = date; }
+
+    public int getAmount() { return amount; }
+
+    public void setAmount(int amount) { this.amount = amount; }
+
 
 
 }
