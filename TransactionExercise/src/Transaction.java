@@ -1,11 +1,13 @@
 import java.time.LocalDate;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 public class Transaction {
 
-    private LocalDate date;
-    private int amount;
     private String sender;
     private String receiver;
+    private LocalDate date;
+    private int amount;
 
     public LocalDate getDate() { return date; }
 
