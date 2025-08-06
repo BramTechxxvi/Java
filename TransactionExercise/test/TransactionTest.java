@@ -33,11 +33,10 @@ class TransactionTest {
                 new Transaction("John Adah", "Matthew", LocalDate.of(2024, 12, 6), 10_000)
         ));
         assertFalse(filteredList.contains(
-                new Transaction("Grace", "Ayoola", LocalDate.of(2024, 12, 23), 7_100),
+                new Transaction("Grace", "Ayoola", LocalDate.of(2024, 12, 23), 7_100)
                 ));
         assertTrue(filteredList.contains(
-                new Transaction("Suliha", "Quoyyum", LocalDate.of(2024, 12, 28), 2_400),
+                new Transaction("Suliha", "Quoyyum", LocalDate.of(2024, 12, 28), 2_400)
                 ));
     }
-
 }
