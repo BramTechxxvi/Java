@@ -1,7 +1,12 @@
 import java.time.LocalDate;
-import lombok.RequiredArgsConstructor;
+import java.util.List;
+import java.util.stream.Collectors;
 
-@RequiredArgsConstructor
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public class Transaction {
 
     private String sender;
@@ -9,22 +14,19 @@ public class Transaction {
     private LocalDate date;
     private int amount;
 
-    public LocalDate getDate() { return date; }
+    public static List<Transaction> filterFromDate(List<Transaction> transactions, LocalDate startDate) {
+        return transactions.stream()
+                .filter(transaction -> !transaction.getDate().isBefore(startDate) && !transaction.getDate().isAfter(LocalDate.now()))
+                .collect(Collectors.toList());
+    }
 
-    public void setDate(LocalDate date) { this.date = date; }
-
-    public int getAmount() { return amount; }
-
-    public void setAmount(int amount) { this.amount = amount; }
-
-    public String getSender() { return sender; }
-
-    public void setSender(String sender) { this.sender = sender; }
-
-    public String getReceiver() { return receiver; }
-
-    public void setReceiver(String receiver) { this.receiver = receiver; }
-
-
-
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "sender='" + sender + '\'' +
+                ", receiver='" + receiver + '\'' +
+                ", date=" + date +
+                ", amount=" + amount +
+                '}';
+    }
 }
