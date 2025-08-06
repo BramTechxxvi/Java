@@ -15,6 +15,10 @@ public class Transaction {
 
     public void setAmount(int amount) { this.amount = amount; }
 
+    public String getSender() { return sender; }
+
+    public void setSender(String sender) { this.sender = sender; }
+
 
 
 }
