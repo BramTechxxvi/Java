@@ -18,6 +18,5 @@ public class Main {
 
         AccountController acctController = appContext.getBean(AccountController.class);
         System.out.println("accountController: " + acctController);
-
     }
 }
