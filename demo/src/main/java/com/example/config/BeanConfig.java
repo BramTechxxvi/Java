@@ -1,5 +1,6 @@
 package com.example.config;
 
+import com.example.controller.AccountController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
